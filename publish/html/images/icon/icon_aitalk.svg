@@ -1,0 +1,18 @@
+<svg id="icon_ai_talk" data-name="icon_ai talk" xmlns="http://www.w3.org/2000/svg" width="24" height="24.011" viewBox="0 0 24 24.011">
+  <g id="guide_icon">
+    <rect id="사각형_277" data-name="사각형 277" width="24" height="24" fill="none"/>
+    <circle id="타원_44" data-name="타원 44" cx="12" cy="12" r="12" fill="none"/>
+    <rect id="사각형_278" data-name="사각형 278" width="24" height="17" transform="translate(20.5) rotate(90)" fill="none"/>
+    <rect id="사각형_279" data-name="사각형 279" width="24" height="17" transform="translate(0 3.5)" fill="none"/>
+  </g>
+  <g id="icon_ai_talk-2" data-name="icon_ai talk" transform="translate(0 0.489)">
+    <line id="선_16" data-name="선 16" y2="1" transform="translate(7.5 8.997)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="선_17" data-name="선 17" y2="1" transform="translate(16.5 8.997)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <g id="그룹_5380" data-name="그룹 5380">
+      <g id="그룹_5382" data-name="그룹 5382">
+        <path id="패스_1364" data-name="패스 1364" d="M10.5,11.183a2.164,2.164,0,0,0,3,0" transform="translate(0 1.328)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="패스_1365" data-name="패스 1365" d="M14,1H10a9.216,9.216,0,0,0-9,9.419,9.4,9.4,0,0,0,5.933,8.846c-.286,1.853-.555,3.9-.308,3.724s2.186-1.735,3.95-3.151H14a9.216,9.216,0,0,0,9-9.419A9.216,9.216,0,0,0,14,1Z" transform="translate(0 -0.489)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+  </g>
+</svg>

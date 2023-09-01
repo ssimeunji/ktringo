@@ -1,0 +1,17 @@
+<svg id="btn_문자" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="패스_1410" data-name="패스 1410" d="M16,0A16,16,0,1,1,0,16,16,16,0,0,1,16,0Z" fill="#706be9"/>
+  <g id="그룹_5404" data-name="그룹 5404" transform="translate(6.4 6.4)">
+    <g id="guide_icon" transform="translate(0 0)">
+      <rect id="사각형_277" data-name="사각형 277" width="20" height="20" transform="translate(-0.4 -0.4)" fill="none"/>
+      <circle id="타원_44" data-name="타원 44" cx="10" cy="10" r="10" transform="translate(-0.4 -0.4)" fill="none"/>
+      <rect id="사각형_278" data-name="사각형 278" width="19.2" height="13.6" transform="translate(16.4) rotate(90)" fill="none"/>
+      <rect id="사각형_279" data-name="사각형 279" width="19.2" height="13.6" transform="translate(0 2.8)" fill="none"/>
+    </g>
+    <path id="패스_1365" data-name="패스 1365" d="M11.4,1H8.2A7.031,7.031,0,0,0,1,7.85a6.876,6.876,0,0,0,4.746,6.434c-.229,1.348-.444,2.84-.246,2.708S7.249,15.73,8.66,14.7H11.4a7.031,7.031,0,0,0,7.2-6.85A7.031,7.031,0,0,0,11.4,1Z" transform="translate(-0.2 1)" fill="#fff"/>
+    <g id="그룹_5405" data-name="그룹 5405" transform="translate(4.4 8)">
+      <circle id="타원_205" data-name="타원 205" cx="1.2" cy="1.2" r="1.2" transform="translate(0 0)" fill="#706be9"/>
+      <circle id="타원_206" data-name="타원 206" cx="1.2" cy="1.2" r="1.2" transform="translate(4 0)" fill="#706be9"/>
+      <circle id="타원_207" data-name="타원 207" cx="1.2" cy="1.2" r="1.2" transform="translate(8 0)" fill="#706be9"/>
+    </g>
+  </g>
+</svg>

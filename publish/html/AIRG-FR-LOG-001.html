@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="kr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta
+			name="viewport"
+			content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0, viewport-fit=cover"
+		/>
+		<!-- <link href=".ico" rel="shortcut icon" /> -->
+		<!-- <link rel="apple-touch-icon-precomposed" href=".png" /> -->
+		<meta name="format-detection" content="telephone=no" />
+		<title>AI 링고</title>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+		<script type="text/javascript" src="js/design.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/contents.css" />
+	</head>
+	<body>
+		<!-- s:login -->
+		<div class="login_wrap">
+			<h1 class="login_h1"><span class="logo_img"></span>링고</h1>
+			<div class="login_subt">
+				매장과 고객을 연결하는<br />
+				<strong>특별한 통화 연결음</strong>
+			</div>
+			<div class="login_wrap-cont">
+				<form action="" method="">
+					<fieldset>
+						<legend class="blind">로그인</legend>
+						<ul class="input_wrap">
+							<li>
+								<div class="form_group">
+									<select name="" id="" class="f1 select">
+										<option value="">02</option>
+										<option value="">031</option>
+									</select>
+									<input type="text" id="" name="" class="input" placeholder="전화번호 입력" />
+								</div>
+							</li>
+							<li>
+								<input type="password" id="" name="" class="input" placeholder="비밀번호 입력" />
+							</li>
+							<li><button type="button" class="btn_round">로그인</button></li>
+						</ul>
+
+						<div class="chb">
+							<input type="checkbox" id="checkbox1" name="agree" /><label for="checkbox1"><span>자동 로그인</span></label>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+
+			<div class="etc_list">
+				<p><a href="javascript:;" class="layerBtn" layer="layer_pwSearch">비밀번호를 잊으셨나요? </a></p>
+				<p>
+					<strong><a href="javascript:;" class="layerBtn" layer="layer_pwSetting">처음 방문이신가요? </a></strong>
+				</p>
+			</div>
+		</div>
+		<!-- e:login -->
+
+		<!-- s: 비밀번호 찾기 full popup -->
+		<div class="full_page layerPopUp" layer="layer_pwSearch">
+			<div class="full_page-header">
+				<div class="title">비밀번호 찾기</div>
+				<button class="btn_popclose"><span>닫기</span></button>
+			</div>
+			<div class="full_page-cont">
+				<!-- s: -->
+				<div class="pw_section">
+					<div class="p_dep2">회선번호 인증</div>
+					<div class="form_group">
+						<select name="" id="" class="f1 select">
+							<option value="">02</option>
+							<option value="">031</option>
+						</select>
+						<input type="text" id="" name="" class="input" placeholder="전화번호 입력" />
+						<button class="btn_form">인증</button>
+					</div>
+					<div class="desc_txt">* 센트릭스 회선은 이용할 수 없습니다.</div>
+				</div>
+				<!-- e: -->
+				<!-- s: -->
+				<div class="pw_section">
+					<div class="p_dep2">인증 번호</div>
+					<div class="form_group">
+						<input type="text" id="" name="" class="input" placeholder="인증번호 입력" />
+						<span class="time">03:00</span>
+						<button class="btn_form">확인</button>
+					</div>
+				</div>
+				<!-- e: -->
+				<!-- s: -->
+				<div class="pw_section">
+					<div class="p_dep2">사업자번호/법인 번호(뒤6자리)</div>
+					<div class="form_group">
+						<span class="masking">******</span>
+						<span class="bar">-</span>
+						<input type="text" id="" name="" class="input" placeholder="" />
+					</div>
+				</div>
+				<!-- e: -->
+				<!-- s: -->
+				<div class="pw_section">
+					<div class="p_dep2">새 비밀번호</div>
+					<input type="password" id="" name="" class="input" placeholder="새 비밀번호를 입력 해주세요." />
+					<div class="val">영분, 숫자, 특수문자 조합하여 8~12자리</div>
+					<input type="password" id="" name="" class="input" placeholder="새 비밀번호를 다시 입력 해주세요." />
+				</div>
+				<!-- e: -->
+			</div>
+			<!-- s:bottom btn -->
+			<div class="full_page-bottom">
+				<button type="button" class="btn_round"><span>설정하기</span></button>
+			</div>
+			<!-- e:bottom btn -->
+		</div>
+		<!-- e: 비밀번호 찾기 full popup -->
+
+		<!-- s: 비밀번호 설정 full popup -->
+		<div class="full_page layerPopUp" layer="layer_pwSetting">
+			<div class="full_page-header">
+				<div class="title">비밀번호 설정</div>
+				<button class="btn_popclose"><span>닫기</span></button>
+			</div>
+			<div class="full_page-cont">
+				<!-- s: -->
+				<div class="pw_section">
+					<div class="p_dep2">회선번호 인증</div>
+					<div class="form_group">
+						<select name="" id="" class="f1 select">
+							<option value="">02</option>
+							<option value="">031</option>
+						</select>
+						<input type="text" id="" name="" class="input" placeholder="전화번호 입력" />
+						<button class="btn_form">인증</button>
+					</div>
+					<div class="desc_txt">* 센트릭스 회선은 이용할 수 없습니다.</div>
+				</div>
+				<!-- e: -->
+				<!-- s: -->
+				<div class="pw_section">
+					<div class="p_dep2">인증 번호</div>
+					<div class="form_group">
+						<input type="text" id="" name="" class="input" placeholder="인증번호 입력" />
+						<span class="time">03:00</span>
+						<button class="btn_form">확인</button>
+					</div>
+				</div>
+				<!-- e: -->
+				<!-- s: -->
+				<div class="pw_section">
+					<div class="p_dep2">사업자번호/법인 번호(뒤6자리)</div>
+					<div class="form_group">
+						<span class="masking">******</span>
+						<span class="bar">-</span>
+						<input type="text" id="" name="" class="input" placeholder="" />
+					</div>
+				</div>
+				<!-- e: -->
+				<!-- s: -->
+				<div class="pw_section">
+					<div class="p_dep2">새 비밀번호</div>
+					<input type="password" id="" name="" class="input" placeholder="새 비밀번호를 입력 해주세요." />
+					<div class="val">영분, 숫자, 특수문자 조합하여 8~12자리</div>
+					<input type="password" id="" name="" class="input" placeholder="새 비밀번호를 다시 입력 해주세요." />
+				</div>
+				<!-- e: -->
+				<!-- s: -->
+				<div class="pw_section">
+					<div class="p_dep2">약관 동의</div>
+					<div class="form_list">
+						<div class="chb">
+							<input type="checkbox" id="checkbox1" name="agree" /><label for="checkbox1"><span>모두 동의</span></label>
+						</div>
+						<div class="chb">
+							<input type="checkbox" id="checkbox2" name="agree" /><label for="checkbox2"><span>서비스 이용 약관(필수)</span></label>
+							<a href="javascript:;" class="btn_ar btnToggle" data-panelid="agree_box">보기</a>
+						</div>
+					</div>
+					<div class="texta" id="agree_box">
+						<textarea name="" id="" cols="30" rows="10"></textarea>
+					</div>
+					<div class="chb">
+						<input type="checkbox" id="checkbox3" name="agreea" class="chb" /><label for="checkbox3"><span>개인정보 수집 및 이동 동의(필수)</span></label>
+					</div>
+				</div>
+				<!-- e: -->
+			</div>
+			<!-- s:bottom btn -->
+			<div class="full_page-bottom">
+				<button type="button" class="btn_round" disabled><span>설정하기</span></button>
+			</div>
+			<!-- e:bottom btn -->
+		</div>
+		<!-- e: 비밀번호 설정 full popup -->
+
+		<!-- s: 비밀번호 정기 변경안내  full popup layer_pwChange-->
+		<div class="full_page layerPopUp" layer="layer_pwChange">
+			<div class="full_page-header">
+				<div class="title">비밀번호 정기 변경안내</div>
+				<button class="btn_popclose"><span>닫기</span></button>
+			</div>
+			<div class="full_page-cont">
+				<!-- s: -->
+				<div class="info_text">
+					고객님의 개인정보 보호와 안전한 서비스 사용을 위해 비밀번호를 변경해 주시기 바랍니다.<br />
+					소중한 개인정보를 안전하게 지키기 위해 주기적(최소 3개월)으로 비밀번호를 변경해야 합니다.
+				</div>
+				<div class="pw_section">
+					<div class="p_dep2">현재 비밀번호</div>
+					<input type="password" id="" name="" class="input" placeholder="현재 비밀번호를 입력 해주세요." />
+
+					<div class="p_dep2 mt">새 비밀번호</div>
+					<input type="password" id="" name="" class="input" placeholder="새 비밀번호를 입력 해주세요." />
+					<div class="val">영분, 숫자, 특수문자 조합하여 8~12자리</div>
+					<input type="password" id="" name="" class="input" placeholder="새 비밀번호를 다시 입력 해주세요." />
+				</div>
+				<!-- e: -->
+			</div>
+			<!-- s:bottom btn -->
+			<div class="full_page-bottom">
+				<div class="btn_row">
+					<button type="button" class="btn_round secondary"><span>변경안함</span></button>
+					<button type="button" class="btn_round"><span>변경하기</span></button>
+				</div>
+			</div>
+			<!-- e:bottom btn -->
+		</div>
+		<!-- e: 비밀번호 정기 변경안내  full popup -->
+	</body>
+</html>

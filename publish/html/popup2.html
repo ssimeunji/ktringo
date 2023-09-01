@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="kr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta
+			name="viewport"
+			content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0, viewport-fit=cover"
+		/>
+		<!-- <link href=".ico" rel="shortcut icon" /> -->
+		<!-- <link rel="apple-touch-icon-precomposed" href=".png" /> -->
+		<meta name="format-detection" content="telephone=no" />
+		<title>AI 링고</title>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+		<script type="text/javascript" src="js/design.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/contents.css" />
+	</head>
+	<body>
+		<!-- s:header -->
+		<div class="header_wrap">
+			<div class="header_wrap-title">
+				<h1><img src="images/logo.svg" alt="kt링고" /></h1>
+				<div class="line">
+					<div class="num">02-3322-1239</div>
+					<button class="btn_down btnToggle" data-panelid="panel1"><span class="blind">열기</span></button>
+					<!-- s:dropmenu -->
+					<div class="menu_box" id="panel1">
+						<ul>
+							<li><a href="javascript:;">02-3322-1239</a></li>
+							<li><a href="javascript:;">02-3322-1239</a></li>
+							<li><a href="javascript:;">02-3322-1239</a></li>
+						</ul>
+					</div>
+					<!-- e:dropmenu -->
+				</div>
+				<!-- s:navi -->
+				<div class="navigator">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<i class="icon_aitalk"></i>
+								<p class="txt">AI 톡</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="icon_setting"></i>
+								<p class="txt">인사말 설정</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="icon_create"></i>
+								<p class="txt">인사말 제작</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="active">
+								<i class="icon_mypage"></i>
+								<p class="txt">마이페이지</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- e:navi -->
+				<div class="alarm_wrap layerBtn" layer="layer_alarm">
+					<i class="ic"></i>
+					<div class="has_icon"></div>
+				</div>
+			</div>
+		</div>
+		<!-- e:header -->
+
+		<div class="cont_wrap">
+			<!-- s:2dep title -->
+			<div class="title_wrap addmb">
+				<h2 class="h2_title">마이페이지</h2>
+			</div>
+			<!-- e:2dep title -->
+
+			<!-- s:content -->
+			<div class="cont_body"></div>
+
+			<!-- e:content -->
+		</div>
+
+		<!-- s:0829 수정  레이어팝업 -->
+		<div id="pop" class="d_modal">
+			<div class="d_modal_dim"></div>
+			<div class="d_content">
+				<div class="cont">
+					<p class="t1">메세지 이용 요금안내</p>
+					<p class="t2">
+						메세지는 매장 유선화번호로 발신되며 이용료가 발생 할 수 있습니다.<br />
+						메시지를 보내시겠습니까?
+					</p>
+				</div>
+				<div class="close btn_sb">
+					<form method="post" action="" name="pop_form">
+						<div class="chb">
+							<div id="check"><input type="checkbox" value="checkbox" name="chkbox" id="chkday" /><label for="chkday">다시 보기 않기</label></div>
+							<span id="close" class="btc">닫기</span>
+						</div>
+					</form>
+				</div>
+				<a href="javascript:;" class="pop_close">Close</a>
+			</div>
+		</div>
+
+		<!-- e:0829 수정  레이어팝업-->
+
+		<script>
+			// 쿠키 가져오기
+			var getCookie = function (cname) {
+				var name = cname + "=";
+				var ca = document.cookie.split(";");
+				for (var i = 0; i < ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0) == " ") c = c.substring(1);
+					if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+				}
+				return "";
+			};
+
+			// 24시간 기준 쿠키 설정하기
+			var setCookie = function (cname, cvalue, exdays) {
+				var todayDate = new Date();
+				todayDate.setTime(todayDate.getTime() + exdays * 24 * 60 * 60 * 1000);
+				var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
+				document.cookie = cname + "=" + cvalue + "; " + expires;
+			};
+
+			var couponClose = function () {
+				if ($("input[name='chkbox']").is(":checked") == true) {
+					setCookie("close", "Y", 365); //기간( ex. 1은 하루, 7은 일주일)
+				}
+				$("#pop").hide();
+			};
+
+			$(document).ready(function () {
+				var cookiedata = document.cookie;
+				if (cookiedata.indexOf("close=Y") < 0) {
+					$("#pop").show();
+					$(".pop_close").on("click", function () {
+						$("#pop").hide();
+					});
+				} else {
+					$("#pop").hide();
+				}
+				$("#close").click(function () {
+					couponClose();
+				});
+			});
+		</script>
+	</body>
+</html>

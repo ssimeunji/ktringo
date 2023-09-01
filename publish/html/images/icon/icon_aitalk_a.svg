@@ -1,0 +1,15 @@
+<svg id="icon_ai_talk" data-name="icon_ai talk" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="guide_icon">
+    <rect id="사각형_277" data-name="사각형 277" width="24" height="24" fill="none"/>
+    <circle id="타원_44" data-name="타원 44" cx="12" cy="12" r="12" fill="none"/>
+    <rect id="사각형_278" data-name="사각형 278" width="24" height="17" transform="translate(20.5) rotate(90)" fill="none"/>
+    <rect id="사각형_279" data-name="사각형 279" width="24" height="17" transform="translate(0 3.5)" fill="none"/>
+  </g>
+  <g id="icon_ai_talk-2" data-name="icon_ai talk" transform="translate(0 0.489)">
+    <path id="패스_1365" data-name="패스 1365" d="M14,1H10a9.216,9.216,0,0,0-9,9.419,9.4,9.4,0,0,0,5.933,8.846c-.286,1.853-.555,3.9-.308,3.724s2.186-1.735,3.95-3.151H14a9.216,9.216,0,0,0,9-9.419A9.216,9.216,0,0,0,14,1Z" transform="translate(0 -0.489)" fill="#706be9"/>
+    <path id="패스_1365_-_윤곽선" data-name="패스 1365 - 윤곽선" d="M10,0h4a9.736,9.736,0,0,1,7.087,3.068A10.578,10.578,0,0,1,24,10.419a10.578,10.578,0,0,1-2.913,7.351A9.736,9.736,0,0,1,14,20.838H10.927C7.9,23.266,7.351,23.7,7.216,23.8a1.034,1.034,0,0,1-1.4-.157c-.327-.382-.339-.846-.208-2.05.05-.458.125-1.031.224-1.708a10.093,10.093,0,0,1-3.985-3.439A10.742,10.742,0,0,1,2.913,3.068,9.736,9.736,0,0,1,10,0Zm4,18.838a8.227,8.227,0,0,0,8-8.419A8.227,8.227,0,0,0,14,2H10a8.227,8.227,0,0,0-8,8.419,8.632,8.632,0,0,0,1.5,4.894A8.059,8.059,0,0,0,7.288,18.33a1,1,0,0,1,.633,1.087c-.088.567-.156,1.04-.209,1.433.556-.445,1.285-1.029,2.237-1.793a1,1,0,0,1,.626-.22Z" transform="translate(0 -0.489)" fill="#706be9"/>
+    <path id="패스_1364" data-name="패스 1364" d="M10.5,11.183a2.164,2.164,0,0,0,3,0" transform="translate(0 1.328)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="선_16" data-name="선 16" y2="1" transform="translate(7.5 8.997)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <line id="선_17" data-name="선 17" y2="1" transform="translate(16.5 8.997)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  </g>
+</svg>

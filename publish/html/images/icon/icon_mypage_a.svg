@@ -1,0 +1,12 @@
+<svg id="icon_mypage" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="guide_icon">
+    <rect id="사각형_277" data-name="사각형 277" width="24" height="24" fill="none"/>
+    <circle id="타원_44" data-name="타원 44" cx="12" cy="12" r="12" fill="none"/>
+    <rect id="사각형_278" data-name="사각형 278" width="24" height="17" transform="translate(20.5) rotate(90)" fill="none"/>
+    <rect id="사각형_279" data-name="사각형 279" width="24" height="17" transform="translate(0 3.5)" fill="none"/>
+  </g>
+  <g id="icon_mypage-2" data-name="icon_mypage" transform="translate(3.5 1.5)">
+    <path id="합치기_2" data-name="합치기 2" d="M-153.5,254.5a1,1,0,0,1-1-1,10.72,10.72,0,0,1,.788-4.122,9.272,9.272,0,0,1,2.167-3.174,10.124,10.124,0,0,1,7.054-2.7,10.1,10.1,0,0,1,7.047,2.7,9.268,9.268,0,0,1,2.161,3.174,10.757,10.757,0,0,1,.784,4.118,1,1,0,0,1-.293.708,1,1,0,0,1-.707.294Z" transform="translate(153 -232.998)" fill="#706be9"/>
+    <path id="패스_1413" data-name="패스 1413" d="M5,0A5,5,0,1,1,0,5,5,5,0,0,1,5,0Z" transform="translate(3.5 -0.5)" fill="#706be9"/>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg id="구성_요소_40_1" data-name="구성 요소 40 – 1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="btn_전화" transform="translate(-244 -167)">
+    <circle id="타원_203" data-name="타원 203" cx="16" cy="16" r="16" transform="translate(244 167)" fill="#706be9"/>
+    <path id="합치기_4" data-name="합치기 4" d="M12.728,413.264l-4.243-4.243-4.243,4.243a2,2,0,1,1-2.829-2.829l4.243-4.243L1.414,401.95a2,2,0,0,1,2.829-2.829l4.243,4.243,4.243-4.243a2,2,0,1,1,2.829,2.829l-4.243,4.243,4.243,4.243a2,2,0,0,1-2.829,2.829Z" transform="translate(251.172 -223.535)" fill="#fff"/>
+  </g>
+</svg>

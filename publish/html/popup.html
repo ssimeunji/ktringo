@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="kr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta
+			name="viewport"
+			content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0, viewport-fit=cover"
+		/>
+		<!-- <link href=".ico" rel="shortcut icon" /> -->
+		<!-- <link rel="apple-touch-icon-precomposed" href=".png" /> -->
+		<meta name="format-detection" content="telephone=no" />
+		<title>AI 링고</title>
+		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+		<script type="text/javascript" src="js/design.js"></script>
+		<script type="text/javascript" src="js/jquery.modal.min.js"></script>
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/contents.css" />
+	</head>
+	<body>
+		<!-- s:header -->
+		<div class="header_wrap">
+			<div class="header_wrap-title">
+				<h1><img src="images/logo.svg" alt="kt링고" /></h1>
+				<div class="line">
+					<div class="num">02-3322-1239</div>
+					<button class="btn_down btnToggle" data-panelid="panel1"><span class="blind">열기</span></button>
+					<!-- s:dropmenu -->
+					<div class="menu_box" id="panel1">
+						<ul>
+							<li><a href="javascript:;">02-3322-1239</a></li>
+							<li><a href="javascript:;">02-3322-1239</a></li>
+							<li><a href="javascript:;">02-3322-1239</a></li>
+						</ul>
+					</div>
+					<!-- e:dropmenu -->
+				</div>
+				<!-- s:navi -->
+				<div class="navigator">
+					<ul>
+						<li>
+							<a href="javascript:;">
+								<i class="icon_aitalk"></i>
+								<p class="txt">AI 톡</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="icon_setting"></i>
+								<p class="txt">인사말 설정</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<i class="icon_create"></i>
+								<p class="txt">인사말 제작</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" class="active">
+								<i class="icon_mypage"></i>
+								<p class="txt">마이페이지</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- e:navi -->
+				<div class="alarm_wrap layerBtn" layer="layer_alarm">
+					<i class="ic"></i>
+					<div class="has_icon"></div>
+				</div>
+			</div>
+		</div>
+		<!-- e:header -->
+
+		<div class="cont_wrap">
+			<!-- s:2dep title -->
+			<div class="title_wrap addmb">
+				<h2 class="h2_title">마이페이지</h2>
+			</div>
+			<!-- e:2dep title -->
+
+			<!-- s:content -->
+			<div class="cont_body">
+				<!-- s: -->
+				<a href="#divpop1" rel="modal:open" class="list_box">
+					<div class="top">
+						<p class="tit">이미지형 레이어팝업</p>
+					</div>
+				</a>
+				<!-- e: -->
+
+				<!-- s: -->
+				<a href="#popText" rel="modal:open" class="list_box">
+					<div class="top">
+						<p class="tit">TEXT형 레이어팝업</p>
+					</div>
+				</a>
+				<!-- e: -->
+
+				<!-- s: -->
+				<a href="#popBtns" rel="modal:open" class="list_box">
+					<div class="top">
+						<p class="tit">하단버튼 2개 팝업</p>
+					</div>
+				</a>
+				<!-- e: -->
+			</div>
+
+			<!-- e:content -->
+		</div>
+
+		<!-- s: 이미지형 선택 레이어팝업 -->
+		<div id="divpop1" class="modal notice divpop">
+			<div class="modal_title">팝업명</div>
+			<a href="" class="close-modal">close</a>
+
+			<div class="modal_body">
+				<div class="popevent_img"><img src="images/@popup.png" alt="" /></div>
+			</div>
+
+			<div class="modal_footer">
+				<form method="post" action="" name="pop_form">
+					<div class="btn_sb">
+						<div class="chb">
+							<input type="checkbox" name="chkbox" id="chkday" /><label for="chkday"><span>오늘 하루 이 창을 열지 않음</span></label>
+						</div>
+						<a href="javascript:;" class="btn_round popup" id="close">닫기</a>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- e: 이미지형 선택 레이어팝업 -->
+
+		<!-- s:TEXT형  레이어팝업 -->
+		<div id="popText" class="modal notice">
+			<div class="modal_title">팝업명</div>
+			<a href="" class="close-modal">close</a>
+
+			<div class="modal_body">
+				<div class="poptext_wrap">
+					<p class="t1">점검 안내</p>
+					<p class="t2">일시 : 2023.07월 중</p>
+					<p class="t2">사유</p>
+					<p class="t3">정기 점검 안내</p>
+				</div>
+			</div>
+
+			<div class="modal_footer">
+				<!-- <form name="notice_form">
+					<div class="btn_sb">
+						<div class="chb">
+							<input type="checkbox" name="chkbox" id="todaycloseyn" value="Y" /><label for="todaycloseyn"><span>오늘 하루 이 창을 열지 않음</span></label>
+						</div>
+						<a href="#" class="btn_round popup" onclick="javascript:closeWin(1);">닫기</a>
+					</div>
+				</form> -->
+			</div>
+		</div>
+		<!-- e:TEXT형  레이어팝업-->
+
+		<!-- s:하단버튼 2개  레이어팝업 -->
+		<div id="popBtns" class="modal notice">
+			<div class="modal_title">팝업명</div>
+			<a href="" class="close-modal">close</a>
+
+			<div class="modal_body">
+				<div class="poptext_wrap">
+					<p class="t1">점검 안내</p>
+					<p class="t2">일시 : 2023.07월 중</p>
+					<p class="t2">사유</p>
+					<p class="t3">정기 점검 안내</p>
+				</div>
+			</div>
+
+			<div class="modal_footer">
+				<div class="btn_row">
+					<button type="button" class="btn_round third">취소</button>
+					<button type="button" class="btn_round">적용하기</button>
+				</div>
+			</div>
+		</div>
+		<!-- e:하단버튼 2개  레이어팝업-->
+
+		<script>
+			// 쿠키 가져오기
+			var getCookie = function (cname) {
+				var name = cname + "=";
+				var ca = document.cookie.split(";");
+				for (var i = 0; i < ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0) == " ") c = c.substring(1);
+					if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+				}
+				return "";
+			};
+
+			// 24시간 기준 쿠키 설정하기
+			var setCookie = function (cname, cvalue, exdays) {
+				var todayDate = new Date();
+				todayDate.setTime(todayDate.getTime() + exdays * 24 * 60 * 60 * 1000);
+				var expires = "expires=" + todayDate.toUTCString(); // UTC기준의 시간에 exdays인자로 받은 값에 의해서 cookie가 설정 됩니다.
+				document.cookie = cname + "=" + cvalue + "; " + expires;
+			};
+
+			var couponClose = function () {
+				if ($("input[name='chkbox']").is(":checked") == true) {
+					setCookie("close", "Y", 365); //기간( ex. 1은 하루, 7은 일주일)
+				}
+				$("#divpop1").hide();
+			};
+
+			$(document).ready(function () {
+				var cookiedata = document.cookie;
+				if (cookiedata.indexOf("close=Y") < 0) {
+					$("#divpop1").show();
+					$(".pop_close").on("click", function () {
+						$("#divpop1").hide();
+					});
+				} else {
+					$("#divpop1").hide();
+				}
+				$("#close").click(function () {
+					couponClose();
+				});
+			});
+		</script>
+	</body>
+</html>
