@@ -387,12 +387,7 @@ label.custom-select {
 
 .header_wrap {
   background: #706be9;
-  /* padding: 16px 24px; */
-
-  position: sticky;
-  top: 0;
-  padding: 0.5rem 1rem;
-  padding-top: calc(0.3rem + env(safe-area-inset-top));
+  padding: 16px 24px;
 }
 .header_wrap-title {
   display: -webkit-box;
