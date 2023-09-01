@@ -6,7 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="lib/common.css" />
 
+    <link rel="apple-touch-icon" href="logo192.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <title>AI 링고</title>
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker
+          .register("./sw.js")
+          .then((reg) => {
+            console.log("Service worker registered.", reg);
+          })
+          .catch((error) => {
+            console.log("Service worker registration failed.", error);
+          });
+      }
+    </script>
   </head>
   <body>
     <h1>작업 리스트</h1>
