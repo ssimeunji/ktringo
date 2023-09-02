@@ -1863,6 +1863,24 @@ button:disabled {
   padding-top: 30px;
 }
 
+/* s: 230902 추가 */
+.info_t3 {
+  font-size: 0.875rem;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.info_t4 {
+  font-size: 0.875rem;
+  margin-top: 10px;
+  padding-top: 10px;
+  color: #706be9;
+  margin-top: 30px;
+  border-top: 1px dashed #ddd;
+  padding-top: 30px;
+}
+/* e: 230902 추가 */
+
 .info_img {
   margin-top: 10px;
 }
@@ -2053,3 +2071,25 @@ button:disabled {
   background-color: rgba(0, 0, 0, 0.75);
   z-index: 1;
 }
+
+/* s: 230902 추가 */
+.table_type1 {
+  margin-top: 30px;
+}
+
+.table_type1,
+.table_type1 thead tr th {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 0.3125rem 0.9375rem;
+  font-size: 0.875rem;
+}
+
+.table_type1 tbody tr td {
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 0.3125rem 0.9375rem;
+  font-size: 0.875rem;
+}
+
+/* e: 230902 추가 */
