@@ -2085,6 +2085,10 @@ button:disabled {
   font-size: 0.875rem;
 }
 
+.table_type1 thead tr th {
+  background-color: #ededed;
+}
+
 .table_type1 tbody tr td {
   border: 1px solid #ddd;
   text-align: left;
