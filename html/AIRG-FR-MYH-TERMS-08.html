@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="kr" class="ovh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <!-- <link href=".ico" rel="shortcut icon" /> -->
+    <!-- <link rel="apple-touch-icon-precomposed" href=".png" /> -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>AI 링고</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="js/design.js"></script>
+    <script type="text/javascript" src="js/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contents.css" />
+  </head>
+  <body>
+    <!-- s:header -->
+    <div class="header_wrap">
+      <div class="header_wrap-title">
+        <h1><img src="images/logo.svg" alt="kt링고" /></h1>
+        <div class="line">
+          <div class="num">02-3322-1239</div>
+          <button class="btn_down btnToggle" data-panelid="panel1">
+            <span class="blind">열기</span>
+          </button>
+          <!-- s:dropmenu -->
+          <div class="menu_box" id="panel1">
+            <ul>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+            </ul>
+          </div>
+          <!-- e:dropmenu -->
+        </div>
+        <!-- s:navi -->
+        <div class="navigator">
+          <ul>
+            <li>
+              <a href="AIRG-FR-AIT-001.html" class="active">
+                <i class="icon_aitalk"></i>
+                <p class="txt">AI 톡</p>
+              </a>
+            </li>
+            <li>
+              <a href="AIRG-FR-GRT-001.html">
+                <i class="icon_setting"></i>
+                <p class="txt">인사말 설정</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="icon_create"></i>
+                <p class="txt">인사말 제작</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="AIRG-FR-MYH-001.html">
+                <i class="icon_mypage"></i>
+                <p class="txt">마이페이지</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- e:navi -->
+        <div class="alarm_wrap layerBtn" layer="layer_alarm">
+          <i class="ic"></i>
+          <div class="has_icon"></div>
+        </div>
+      </div>
+    </div>
+    <!-- e:header -->
+
+    <div class="cont_wrap">
+      <!-- s:2dep title -->
+      <div class="title_wrap">
+        <h2 class="h2_title">AI 톡</h2>
+      </div>
+      <!-- e:2dep title -->
+
+      <!-- s:tab -->
+      <div class="common-tab">
+        <!-- s:menu -->
+        <div class="tab_width">
+          <ul class="tab_wrap tab-btn">
+            <li class="selectd">
+              <span class="tit">통화기록</span>
+            </li>
+            <li>
+              <span class="tit">AI메모</span>
+            </li>
+          </ul>
+        </div>
+        <!-- e:menu -->
+
+        <!-- s:panel -->
+        <div class="tab-panel">
+          <!-- s:통화기록 -->
+          <div class="tab-item selectd">
+            <div class="cont_body">
+              <!-- s:list_box  -->
+              <div class="date_title">2023년 6월 28일</div>
+              <div class="ai_box">
+                <ul>
+                  <li>
+                    <i class="icon_receive">수신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_miss">부재</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_send">발신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_pull">당겨받기</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- e:list_box  -->
+
+              <!-- s:list_box  -->
+              <div class="date_title">2023년 6월 28일</div>
+              <div class="ai_box">
+                <ul>
+                  <li>
+                    <i class="icon_receive">수신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_miss">부재</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_send">발신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_pull">당겨받기</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- e:list_box  -->
+
+              <!-- s:list_box  -->
+              <div class="date_title">2023년 6월 28일</div>
+              <div class="ai_box">
+                <ul>
+                  <li>
+                    <i class="icon_receive">수신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_miss">부재</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_send">발신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_pull">당겨받기</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- e:list_box  -->
+
+              <div class="infotitle_wrap">
+                <div class="no_r">최근 통화 기록이 없습니다.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- s:AI메모 -->
+          <div class="tab-item">
+            <div class="cont_body">
+              <!-- s -->
+              <div class="aiinfo_box">
+                <p class="t1">
+                  02-3289-1234로 남겨주신 고객님께 남긴 소중한 메시지를 AI가
+                  보여드립니다. ( 30일 까지 조회 가능)
+                </p>
+              </div>
+              <!-- e -->
+
+              <div class="top_select">
+                <label class="custom-select">
+                  <select name="" id="" class="noline">
+                    <option value="">전체</option>
+                    <option value="">읽은메모</option>
+                    <option value="">안읽은메모</option>
+                  </select>
+                </label>
+              </div>
+
+              <!-- s: -->
+              <div class="ai_box memo layerBtn" layer="layer_aitdetail">
+                <div class="bu_new"></div>
+                <div class="top_info">
+                  <div class="phone">010-1234-1234</div>
+                  <div class="time">2023년 6월 28일</div>
+                </div>
+                <div class="msg_wrap">
+                  여보세요 안녕하세요 혹시 30일 수요일에 예약이 가능할까요? 혹시
+                  30 내일 모레 4명 방문 예정입니다.
+                </div>
+              </div>
+              <!-- e:  -->
+
+              <!-- s: -->
+              <div class="ai_box memo layerBtn" layer="layer_aitdetail">
+                <div class="bu_new"></div>
+                <div class="top_info">
+                  <div class="phone">010-1234-1234</div>
+                  <div class="time">2023년 6월 28일</div>
+                </div>
+                <div class="msg_wrap">오늘 휴무이신가요?</div>
+              </div>
+              <!-- e:  -->
+
+              <!-- s: -->
+              <div class="ai_box memo layerBtn" layer="layer_aitdetail">
+                <div class="top_info">
+                  <div class="phone">010-1234-1234</div>
+                  <div class="time">2023년 6월 28일</div>
+                </div>
+                <div class="msg_wrap">오늘 휴무이신가요?</div>
+              </div>
+              <!-- e:  -->
+
+              <div class="infotitle_wrap">
+                <div class="no_r">최근 받은 메모가 없습니다.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- s:panel -->
+      </div>
+      <!-- e:tab -->
+    </div>
+    <!-- s:개인정보방침 -->
+    <div class="footer"><a href="javascript:;">개인정보처리방침</a></div>
+    <!-- e:개인정보방침 -->
+
+    <!-- s: 약관 변경 안내 full popup -->
+    <div class="full_page layerPopUp show" layer="">
+      <div class="full_page-header">
+        <div class="title">개인정보 처리 위탁 동의</div>
+        <button class="btn_popclose"><span>닫기</span></button>
+      </div>
+      <div class="full_page-cont">
+        <!-- s:tab -->
+        <div class="common-tab">
+          <!-- s:panel -->
+          <div class="tab-panel mobile_full">
+            <!-- s:메인 -->
+            <div class="tab-item selectd">
+              <div class="cont_body">
+                <!-- s:tab -->
+                <div class="inner-tab">
+                  <!-- s:panel -->
+                  <div class="tab-panel2">
+                    <!-- s:안드로이드폰 -->
+                    <div class="tab-item selectd">
+                      <div class="cont_body">
+                        <p class="info_t1">
+                          개인정보처리 위탁에 대한 동의(필수동의)_AI링고
+                        </p>
+
+                        <p class="info_t3">
+                          본 기관은 주식회사 케이티(이하 “케이티”라고 합니다)에
+                          본 기관의 개인정보 처리 업무를 다음과 같은 내용으로
+                          위탁하는 데 동의 합니다.
+                        </p>
+                        <p class="info_t2">
+                          <strong>제1조 (목적)</strong>
+                        </p>
+                        <p class="info_t3">
+                          본 동의서는 본 기관과 “케이티” 간에 체결된 AI링고
+                          서비스 신청서(이하 “신청서”라고 합니다)과 관련하여 본
+                          기관이 개인정보 처리 업무를 “케이티”에게 위탁하고
+                          “케이티”의 책임아래 성실하게 업무를 완성하도록 하는 데
+                          필요한 사항을 정함을 목적으로 합니다.
+                        </p>
+
+                        <p class="info_t2">
+                          <strong> 제2조 (용어의 정의) </strong>
+                        </p>
+                        <p class="info_t3">
+                          ① 본 동의서에서 사용하는 용어의 뜻은 다음과 같습니다.
+                        </p>
+                        <p class="info_t3">
+                          "개인정보"란 살아 있는 개인에 관한 정보로서 성명,
+                          주민등록번호 및 영상 등을 통하여 개인을 알아볼 수 있는
+                          정보(해당 정보만으로는 특정 개인을 알아볼 수 없더라도
+                          다른 정보와 쉽게 결합하여 알아볼 수 있는 것을
+                          포함합니다)를 말합니다.
+                        </p>
+                        <p class="info_t3">
+                          "처리"란 개인정보의 수집, 생성, 연계, 연동, 기록,
+                          저장, 보유, 가공, 편집, 검색, 출력, 정정(訂正), 복구,
+                          이용, 제공, 공개, 파기(破棄), 그 밖에 이와 유사한
+                          행위를 말합니다.
+                        </p>
+                        <p class="info_t3">
+                          "정보주체"란 처리되는 정보에 의하여 알아볼 수 있는
+                          사람으로서 그 정보의 주체가 되는 사람을 말합니다.
+                        </p>
+                        <p class="info_t3">
+                          본 동의서에서 별도로 정의되지 아니한 용어는 「개인정보
+                          보호법」, 동법 시행령 및 시행규칙, 「표준 개인정보
+                          보호지침」등 관련 법령에서 정의된 바에 따릅니다.
+                        </p>
+
+                        <p class="info_t2">
+                          <strong
+                            >제3조 (위탁 업무의 목적 및 범위) “케이티”는
+                            신청서의 이행을 위하여 필요한 범위 내에서 다음 각
+                            호의 개인정보 처리 업무를 위탁 받아
+                            수행합니다.</strong
+                          >
+                        </p>
+                        <p class="info_t3">
+                          1. 음성정보의 수집, 저장, 가공, 관리 업무
+                        </p>
+
+                        <p class="info_t2">
+                          <strong>제4조 (재위탁 제한)</strong>
+                        </p>
+                        <p class="info_t3">
+                          ① “케이티”는 본 기관의 사전 서면 승낙을 얻은 경우를
+                          제외하고 본 동의서상의 권리와 의무의 전부 또는 일부를
+                          제3자에게 양도하거나 재위탁할 수 없습니다.
+                        </p>
+                        <p class="info_t3">
+                          ② “케이티”가 본 기관의 사전 서면 승낙을 얻어
+                          재수탁자를 선임한 경우 “케이티”는 당해 재위탁동의서와
+                          함께 그 사실을 즉시 본 기관에게 서면 통보하여야
+                          합니다.
+                        </p>
+
+                        <p class="info_t2">
+                          <strong>제5조 (개인정보의 안전성 확보조치)</strong>
+                        </p>
+                        <p class="info_t3">
+                          “케이티”는 개인정보가 분실ㆍ도난ㆍ유출ㆍ변조 또는
+                          훼손되지 아니하도록 「개인정보 보호법」 제29조, 동법
+                          시행령 제30조 및 「개인정보의 안전성 확보조치 기준」에
+                          따라 다음 각 호와 같은 개인정보 안전성 확보에 필요한
+                          기술적ㆍ관리적 조치를 하여야 합니다.
+                        </p>
+                        <p class="info_t3">
+                          1. 개인정보의 안전한 처리를 위한 내부 관리계획의
+                          수립·시행
+                        </p>
+                        <p class="info_t3">
+                          2. 개인정보에 대한 접근 통제 및 접근 권한의 제한 조치
+                        </p>
+                        <p class="info_t3">
+                          3. 개인정보를 안전하게 저장·전송할 수 있는 암호화
+                          기술의 적용 또는 이에 상응하는 조치
+                        </p>
+                        <p class="info_t3">
+                          4. 개인정보 침해사고 발생에 대응하기 위한 접속기록의
+                          보관 및 위조·변조 방지를 위한 조치
+                        </p>
+                        <p class="info_t3">
+                          5. 개인정보에 대한 보안프로그램의 설치 및 갱신
+                        </p>
+                        <p class="info_t3">
+                          6. 개인정보의 안전한 보관을 위한 보관시설의 마련 또는
+                          잠금장치의 설치 등 물리적 조치
+                        </p>
+                        <p class="info_t3">
+                          7. 그 밖에 개인정보의 안정성 확보를 위하여 필요한
+                          보호조치
+                        </p>
+
+                        <p class="info_t2">
+                          <strong>제6조 (개인정보의 처리 제한)</strong>
+                        </p>
+                        <p class="info_t3">
+                          ① “케이티”는 본 동의서가 유효한 기간 동안은 물론 본
+                          동의서가 효력을 상실한 이후에도 제3조에 따른 위탁업무
+                          수행 목적 범위를 넘어 개인정보를 처리하거나 이를
+                          제3자에게 제공 또는 누설하여서는 안 됩니다.
+                        </p>
+                        <p class="info_t3">
+                          ② “케이티”는 신청서나 본 동의서가 해지▪기간만료 등으로
+                          종료되는 경우 또는 본 동의서의 개인정보 처리 위탁
+                          목적이 달성되는 경우 제3조에 따른 위탁 업무와 관련하여
+                          보유하고 있는 개인정보를 「개인정보 보호법」시행령
+                          제16조에 따라 다음 각 호의 방법으로 즉시 파기하거나
+                          “본 기관”에게 반납하여야 합니다.
+                        </p>
+                        <p class="info_t3">
+                          1. 전자적 파일 형태인 경우: 복원이 불가능한 방법으로
+                          영구 삭제
+                        </p>
+                        <p class="info_t3">
+                          2. 제1호 외의 기록물, 인쇄물, 서면, 그 밖의 기록매체인
+                          경우: 파쇄 또는 소각
+                        </p>
+                        <p class="info_t3">
+                          ③ 제2항에 따라 “케이티”가 개인정보를 파기한 경우
+                          지체없이 본 기관에게 그 결과를 서면으로 통보하여야
+                          합니다.
+                        </p>
+
+                        <p class="info_t2">
+                          <strong>제7조 (수탁자에 대한 관리·감독 등)</strong>
+                        </p>
+                        <p class="info_t3">
+                          ① “본 기관”은 “케이티”에 대하여 다음 각 호의 사항을
+                          관리하도록 요구할 수 있으며, “케이티”는 특별한 사유가
+                          없는 한 이에 응하여야 합니다.
+                        </p>
+                        <p class="info_t3">1. 개인정보의 처리 현황</p>
+                        <p class="info_t3">2. 개인정보의 접근 또는 접속현황</p>
+                        <p class="info_t3">3. 개인정보 접근 또는 접속 대상자</p>
+                        <p class="info_t3">
+                          4. 목적 외 이용▪제공 및 재위탁 금지 준수여부
+                        </p>
+                        <p class="info_t3">
+                          5. 암호화 등 안전성 확보조치 이행여부
+                        </p>
+                        <p class="info_t3">
+                          6. 그 밖에 개인정보의 보호를 위하여 필요한 사항
+                        </p>
+                        <p class="info_t3">
+                          ② 본 기관은 “케이티”에 대하여 제1항 각 호의 사항에
+                          대한 실태를 점검하여 시정을 요구할 수 있으며,
+                          “케이티”는 특별한 사유가 없는 한 이행하여야 합니다.
+                        </p>
+                        <p class="info_t3">
+                          ③ 본 기관은 개인정보 처리 위탁으로 인하여 정보주체의
+                          개인정보가 분실·도난·유출·변조 또는 훼손되지
+                          아니하도록 “케이티”를 교육할 수 있으며, “케이티”는
+                          이에 응하여야 합니다.
+                        </p>
+                        <p class="info_t3">
+                          ④ 제3항에 따른 교육의 시기와 방법 등에 대해서는 “본
+                          기관”은 “케이티”와 협의하여 시행합니다.
+                        </p>
+
+                        <p class="info_t2">
+                          <strong>제8조 (손해배상)</strong>
+                        </p>
+                        <p class="info_t3">
+                          ① “케이티” 또는 “케이티”의 임직원 기타 “케이티”의
+                          수탁자가 본 동의서에 의하여 위탁 또는 재위탁 받은
+                          업무를 수행함에 있어, 본 동의서에 따른 의무를
+                          위반하거나 “케이티” 또는 “케이티”의 임직원 기타
+                          “케이티”의 수탁자의 귀책사유로 인하여 “본 기관” 또는
+                          정보주체 기타 제3자에게 손해가 발생한 경우, “케이티”는
+                          그 손해를 배상하여야 한다. “케이티”가 본 기관에 손해를
+                          배상하는 경우 배상액은 AI링고 월정액이용료의
+                          12개월치로 합니다.
+                        </p>
+                        <p class="info_t3">
+                          ② 제1항과 관련하여 정보주체 기타 제3자에게 발생한
+                          손해에 대하여 본 기관이 전부 또는 일부를 배상한 때에는
+                          본 기관은 이를 “케이티”에게 구상할 수 있습니다.
+                        </p>
+
+                        <p class="info_t2">
+                          <strong>제9조 (동의서의 해제 및 해지)</strong>
+                        </p>
+                        <p class="info_t3">
+                          ① “본 기관” 또는 “케이티”는 다음 각 호에 해당하는
+                          사유가 발생한 경우에는 최고 없이 즉시 본 동의서를 해제
+                          또는 해지할 수 있습니다.
+                        </p>
+                        <p class="info_t3">
+                          1. 상대방이 본 동의서에 따른 의무를 위반하여 30일의
+                          기간을 두고 그 시정을 최고하였음에도 불구하고 시정되지
+                          않은 경우
+                        </p>
+                        <p class="info_t3">
+                          2. 상대방이 정부로부터 본 동의서에 관한 영업의 취소
+                          또는 정지를 당하여 본 동의서의 이행이 불가능하거나
+                          현저히 곤란한 경우
+                        </p>
+                        <p class="info_t3">
+                          3. 상대방에게 파산 또는 회생절차 기타 이에 준하는
+                          절차의 신청이 있거나 절차가 진행된 경우
+                        </p>
+                        <p class="info_t3">
+                          4. 천재지변 기타 불가항력적 사유로 인하여 상대방의 본
+                          동의서 이행이 곤란하다고 인정되는 경우
+                        </p>
+                        <p class="info_t3">
+                          5. 주요재산의 양도, 압류, 가압류 등으로 상대방의
+                          신용에 현저한 위험이 발생하여 본 동의서의 이행을
+                          기대할 수 없는 경우
+                        </p>
+                        <p class="info_t3">
+                          6. 상대방이 금융기관으로부터 부도처분 기타 거래정지를
+                          당하여 본 동의서의 이행을 기대할 수 없는 경우
+                        </p>
+                        <p class="info_t3">
+                          7. 기타 상대방의 신용에 중대한 위험이 있어 본 동의서의
+                          이행이 불가능하거나 현저히 곤란하다고 인정되는 경우
+                        </p>
+                        <p class="info_t3">
+                          ② 전항에 따른 본 동의서의 해제 또는 해지는 손해배상
+                          청구에 영향을 미치지 아니 합니다.
+                        </p>
+
+                        <p class="info_t2">
+                          <strong>제10조 (효력 발생 및 유효기간)</strong>
+                        </p>
+                        <p class="info_t3">
+                          ① 본 동의서는 “본 기관”이 서명 또는 기명날인한 날부터
+                          효력이 발생하며, 신청서가 해지▪종료 기타 사유로 인하여
+                          효력을 상실하거나 본 동의서가 해지▪종료 기타 사유로
+                          인하여 효력을 상실하는 때까지 유효합니다.
+                        </p>
+                        <p class="info_t3">
+                          ② 본 동의서가 유효한 기간 내에 발생한 본 동의서
+                          위반행위에 따른 책임 및 제11조의 비밀유지의무는 본
+                          동의서가 효력을 상실한 후에도 소멸하지 아니합니다.
+                        </p>
+
+                        <p class="info_t2">
+                          <strong>제11조 (비밀유지)</strong>
+                        </p>
+                        <p class="info_t3">
+                          본 기관과 “케이티”는 본 동의서의 체결 및 이행과
+                          관련하여 알게 된 상대방의 업무상 비밀 또는 개인정보를
+                          상대방의 사전 서면 동의 없이 제3자에게 공개, 유출,
+                          제공하여서는 아니 됩니다.
+                        </p>
+
+                        <p class="info_t2">
+                          <strong>제12조 (분쟁의 해결)</strong>
+                        </p>
+                        <p class="info_t3">
+                          본 동의서에서 정하지 않은 사항이나 해석상 이견이 있는
+                          내용에 대해서는 관련 법령 및 일반적 상관례에 따라 상호
+                          합의하여 해결하고, 소송상 분쟁이 발생할 경우 관할
+                          법원은 서울중앙지방법원으로 합니다
+                        </p>
+
+                        <p class="info_t2">
+                          ※ AI링고 서비스의 제공을 위한 개인정보의 수집·이용
+                          관련 세부 내역은 웹 내 게시된 서비스 웹의
+                          ‘개인정보처리방침’에 따릅니다.
+                        </p>
+                        <p class="info_t3">
+                          ※ 귀하는 동의를 거부할 권리가 있으나, 동의하지 않을
+                          경우 서비스 가입에 제약이 있을 수 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- s:panel -->
+                </div>
+                <!-- e:tab -->
+              </div>
+            </div>
+          </div>
+          <!-- s:panel -->
+        </div>
+        <!-- e:tab -->
+      </div>
+    </div>
+    <!-- e: 약관 변경 안내 full popup -->
+
+    <script>
+      // $("#popplay").modal({
+      // 	fadeDuration: 0,
+      // });
+    </script>
+  </body>
+</html>

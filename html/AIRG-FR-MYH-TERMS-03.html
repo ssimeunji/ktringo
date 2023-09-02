@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="kr" class="ovh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <!-- <link href=".ico" rel="shortcut icon" /> -->
+    <!-- <link rel="apple-touch-icon-precomposed" href=".png" /> -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>AI 링고</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+
+    <script type="text/javascript" src="js/design.js"></script>
+    <script type="text/javascript" src="js/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contents.css" />
+  </head>
+  <body>
+    <!-- s:header -->
+    <div class="header_wrap">
+      <div class="header_wrap-title">
+        <h1><img src="images/logo.svg" alt="kt링고" /></h1>
+        <div class="line">
+          <div class="num">02-3322-1239</div>
+          <button class="btn_down btnToggle" data-panelid="panel1">
+            <span class="blind">열기</span>
+          </button>
+          <!-- s:dropmenu -->
+          <div class="menu_box" id="panel1">
+            <ul>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+            </ul>
+          </div>
+          <!-- e:dropmenu -->
+        </div>
+        <!-- s:navi -->
+        <div class="navigator">
+          <ul>
+            <li>
+              <a href="AIRG-FR-AIT-001.html" class="active">
+                <i class="icon_aitalk"></i>
+                <p class="txt">AI 톡</p>
+              </a>
+            </li>
+            <li>
+              <a href="AIRG-FR-GRT-001.html">
+                <i class="icon_setting"></i>
+                <p class="txt">인사말 설정</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="icon_create"></i>
+                <p class="txt">인사말 제작</p>
+              </a>
+            </li>
+
+            <li>
+              <a href="AIRG-FR-MYH-001.html">
+                <i class="icon_mypage"></i>
+                <p class="txt">마이페이지</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- e:navi -->
+        <div class="alarm_wrap layerBtn" layer="layer_alarm">
+          <i class="ic"></i>
+          <div class="has_icon"></div>
+        </div>
+      </div>
+    </div>
+    <!-- e:header -->
+
+    <div class="cont_wrap">
+      <!-- s:2dep title -->
+      <div class="title_wrap">
+        <h2 class="h2_title">AI 톡</h2>
+      </div>
+      <!-- e:2dep title -->
+
+      <!-- s:tab -->
+      <div class="common-tab">
+        <!-- s:menu -->
+        <div class="tab_width">
+          <ul class="tab_wrap tab-btn">
+            <li class="selectd">
+              <span class="tit">통화기록</span>
+            </li>
+            <li>
+              <span class="tit">AI메모</span>
+            </li>
+          </ul>
+        </div>
+        <!-- e:menu -->
+
+        <!-- s:panel -->
+        <div class="tab-panel">
+          <!-- s:통화기록 -->
+          <div class="tab-item selectd">
+            <div class="cont_body">
+              <!-- s:list_box  -->
+              <div class="date_title">2023년 6월 28일</div>
+              <div class="ai_box">
+                <ul>
+                  <li>
+                    <i class="icon_receive">수신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_miss">부재</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_send">발신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_pull">당겨받기</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- e:list_box  -->
+
+              <!-- s:list_box  -->
+              <div class="date_title">2023년 6월 28일</div>
+              <div class="ai_box">
+                <ul>
+                  <li>
+                    <i class="icon_receive">수신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_miss">부재</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_send">발신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_pull">당겨받기</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- e:list_box  -->
+
+              <!-- s:list_box  -->
+              <div class="date_title">2023년 6월 28일</div>
+              <div class="ai_box">
+                <ul>
+                  <li>
+                    <i class="icon_receive">수신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_miss">부재</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_send">발신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_pull">당겨받기</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- e:list_box  -->
+
+              <div class="infotitle_wrap">
+                <div class="no_r">최근 통화 기록이 없습니다.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- s:AI메모 -->
+          <div class="tab-item">
+            <div class="cont_body">
+              <!-- s -->
+              <div class="aiinfo_box">
+                <p class="t1">
+                  02-3289-1234로 남겨주신 고객님께 남긴 소중한 메시지를 AI가
+                  보여드립니다. ( 30일 까지 조회 가능)
+                </p>
+              </div>
+              <!-- e -->
+
+              <div class="top_select">
+                <label class="custom-select">
+                  <select name="" id="" class="noline">
+                    <option value="">전체</option>
+                    <option value="">읽은메모</option>
+                    <option value="">안읽은메모</option>
+                  </select>
+                </label>
+              </div>
+
+              <!-- s: -->
+              <div class="ai_box memo layerBtn" layer="layer_aitdetail">
+                <div class="bu_new"></div>
+                <div class="top_info">
+                  <div class="phone">010-1234-1234</div>
+                  <div class="time">2023년 6월 28일</div>
+                </div>
+                <div class="msg_wrap">
+                  여보세요 안녕하세요 혹시 30일 수요일에 예약이 가능할까요? 혹시
+                  30 내일 모레 4명 방문 예정입니다.
+                </div>
+              </div>
+              <!-- e:  -->
+
+              <!-- s: -->
+              <div class="ai_box memo layerBtn" layer="layer_aitdetail">
+                <div class="bu_new"></div>
+                <div class="top_info">
+                  <div class="phone">010-1234-1234</div>
+                  <div class="time">2023년 6월 28일</div>
+                </div>
+                <div class="msg_wrap">오늘 휴무이신가요?</div>
+              </div>
+              <!-- e:  -->
+
+              <!-- s: -->
+              <div class="ai_box memo layerBtn" layer="layer_aitdetail">
+                <div class="top_info">
+                  <div class="phone">010-1234-1234</div>
+                  <div class="time">2023년 6월 28일</div>
+                </div>
+                <div class="msg_wrap">오늘 휴무이신가요?</div>
+              </div>
+              <!-- e:  -->
+
+              <div class="infotitle_wrap">
+                <div class="no_r">최근 받은 메모가 없습니다.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- s:panel -->
+      </div>
+      <!-- e:tab -->
+    </div>
+    <!-- s:개인정보방침 -->
+    <div class="footer"><a href="javascript:;">개인정보처리방침</a></div>
+    <!-- e:개인정보방침 -->
+
+    <!-- s: 약관 변경 안내 full popup -->
+    <div class="full_page layerPopUp show" layer="">
+      <div class="full_page-header">
+        <div class="title">개인(신용)정보의 조회 및 이용/제공에 대한 동의</div>
+        <button class="btn_popclose"><span>닫기</span></button>
+      </div>
+      <div class="full_page-cont">
+        <!-- s:tab -->
+        <div class="common-tab">
+          <!-- s:panel -->
+          <div class="tab-panel mobile_full">
+            <!-- s:메인 -->
+            <div class="tab-item selectd">
+              <div class="cont_body">
+                <!-- s:tab -->
+                <div class="inner-tab">
+                  <!-- s:panel -->
+                  <div class="tab-panel2">
+                    <!-- s:안드로이드폰 -->
+                    <div class="tab-item selectd">
+                      <div class="cont_body">
+                        <p class="info_t1">
+                          개인(신용)정보의 조회 및 이용/제공에 대한 동의
+                          (필수동의)_상품공통
+                        </p>
+
+                        <table class="table_type1">
+                          <colgroup>
+                            <col style="width: 20%" />
+                            <col style="width: 30%" />
+                            <col style="width: 30%" />
+                            <col style="width: 20%" />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>목적</th>
+                              <th>제공하는 항목</th>
+                              <th>제공받는 자</th>
+                              <th>보유 및 이용기간</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="">
+                              <td>명의도용방지서비스</td>
+                              <td>
+                                성명,, 생년월일, 외국인등록번호, 상품명, 회선수
+                              </td>
+                              <td>한국정보통신진흥협회(KAIT)</td>
+                              <td rowspan="3">해당업무 처리 완료시까지</td>
+                            </tr>
+                            <tr class="">
+                              <td>방송통신 신용정보 공동관리</td>
+                              <td>
+                                성명(법인명),, 생년월일,
+                                외국인등록번호/사업장등록번호, 연체금액,
+                                연체일자, 등록사유
+                              </td>
+                              <td>한국정보통신진흥협회(KAIT)</td>
+                            </tr>
+                            <tr class="">
+                              <td>해지 미환급금 반환 업무</td>
+                              <td>
+                                성명, 생년월일,
+                                외국인등록번호/사업자등록번호/법인등록번호,
+                                서비스번호(서비스ID), 요금정보 등
+                              </td>
+                              <td>
+                                한국정보통신진흥협회(KAIT),
+                                한국통신사업자연합회(KTOA), 행정자치부, 타통신사
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td>목적</td>
+                              <td>제공받는 항목</td>
+                              <td>제공하는 자</td>
+                              <td>보유 및 이용기간</td>
+                            </tr>
+                            <tr class="">
+                              <td>
+                                상품/서비스 가입 심사, 이용 및 유지여부
+                                (본인인증, 할부가능여부 심사, 연체정보, 복지할인
+                                대상, 사망자/휴·폐업 등 확인)
+                              </td>
+                              <td>
+                                본인확인/인증정보, 신용등급, 연체정보, 신용보험
+                                가입여부 및 가입가능 한도, 할부가입 가능여부 및
+                                가입가능 회선 수, 채무불이행 정보, 공공기록 중
+                                체납정보, 금융질서 문란자 정보 등
+                              </td>
+                              <td>
+                                신용정보회사, 신용정보집중기관,
+                                보증보험회사(보증보험회사의 신용정보회사 등을
+                                통한 조회 포함) -NICE신용평가정보㈜,
+                                한국정보통신진흥협회(KAIT), ㈜ 애큐온캐피탈(구
+                                ㈜케이티캐피탈), 금융결제원, 신용카드사,
+                                행정자치부, 국가보훈처, 보건복지부, 법무부
+                              </td>
+                              <td>
+                                동의서를 제출한 시점부터 당해 서비스 계약,
+                                지급보증 계약 및 보험 계약의 효력이 종료
+                                (가입거절의 경우 상담 종료)되는 시점까지
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td colspan="4">
+                                <ul>
+                                  <li>
+                                    ※ 채무불이행정보, 공공기록정보 중 체납정보,
+                                    금융질서 문란자 정보 등에 등록되어 있는 경우
+                                    청약에 대한 승낙을 유보할 수 있습니다.
+                                  </li>
+                                  <li>
+                                    ※ 일반적으로 신용정보를 조회하는 경우
+                                    신용등급이 하락할 수 있으나 본 조회는
+                                    신용등급에 아무런 영향을 미치지 않습니다.
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- s:panel -->
+                </div>
+                <!-- e:tab -->
+              </div>
+            </div>
+          </div>
+          <!-- s:panel -->
+        </div>
+        <!-- e:tab -->
+      </div>
+    </div>
+    <!-- e: 약관 변경 안내 full popup -->
+
+    <script>
+      // $("#popplay").modal({
+      // 	fadeDuration: 0,
+      // });
+    </script>
+  </body>
+</html>
