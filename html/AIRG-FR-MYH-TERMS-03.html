@@ -406,7 +406,9 @@
     <div class="full_page layerPopUp show" layer="">
       <div class="full_page-header">
         <div class="title">개인(신용)정보의 조회 및 이용/제공에 대한 동의</div>
-        <button class="btn_popclose" onclick="windowclose();"><span>닫기</span></button>
+        <button class="btn_popclose" onclick="windowclose();">
+          <span>닫기</span>
+        </button>
       </div>
       <div class="full_page-cont">
         <!-- s:tab -->
@@ -415,7 +417,7 @@
           <div class="tab-panel mobile_full">
             <!-- s:메인 -->
             <div class="tab-item selectd">
-              <div class="cont_body">
+              <div class="cont_body" style="overflow-y: scroll">
                 <!-- s:tab -->
                 <div class="inner-tab">
                   <!-- s:panel -->
@@ -523,6 +525,101 @@
                             </tr>
                           </tbody>
                         </table>
+                        <!-- <table class="table_type1">
+                          <colgroup>
+                            <col style="width: 20%" />
+                            <col style="width: 30%" />
+                            <col style="width: 30%" />
+                            <col style="width: 20%" />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>목적</th>
+                              <th>제공하는 항목</th>
+                              <th>제공받는 자</th>
+                              <th>보유 및 이용기간</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="">
+                              <td>명의도용방지서비스</td>
+                              <td>
+                                성명,, 생년월일, 외국인등록번호, 상품명, 회선수
+                              </td>
+                              <td>한국정보통신진흥협회(KAIT)</td>
+                              <td rowspan="3">해당업무 처리 완료시까지</td>
+                            </tr>
+                            <tr class="">
+                              <td>방송통신 신용정보 공동관리</td>
+                              <td>
+                                성명(법인명),, 생년월일,
+                                외국인등록번호/사업장등록번호, 연체금액,
+                                연체일자, 등록사유
+                              </td>
+                              <td>한국정보통신진흥협회(KAIT)</td>
+                            </tr>
+                            <tr class="">
+                              <td>해지 미환급금 반환 업무</td>
+                              <td>
+                                성명, 생년월일,
+                                외국인등록번호/사업자등록번호/법인등록번호,
+                                서비스번호(서비스ID), 요금정보 등
+                              </td>
+                              <td>
+                                한국정보통신진흥협회(KAIT),
+                                한국통신사업자연합회(KTOA), 행정자치부, 타통신사
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td>목적</td>
+                              <td>제공받는 항목</td>
+                              <td>제공하는 자</td>
+                              <td>보유 및 이용기간</td>
+                            </tr>
+                            <tr class="">
+                              <td>
+                                상품/서비스 가입 심사, 이용 및 유지여부
+                                (본인인증, 할부가능여부 심사, 연체정보, 복지할인
+                                대상, 사망자/휴·폐업 등 확인)
+                              </td>
+                              <td>
+                                본인확인/인증정보, 신용등급, 연체정보, 신용보험
+                                가입여부 및 가입가능 한도, 할부가입 가능여부 및
+                                가입가능 회선 수, 채무불이행 정보, 공공기록 중
+                                체납정보, 금융질서 문란자 정보 등
+                              </td>
+                              <td>
+                                신용정보회사, 신용정보집중기관,
+                                보증보험회사(보증보험회사의 신용정보회사 등을
+                                통한 조회 포함) -NICE신용평가정보㈜,
+                                한국정보통신진흥협회(KAIT), ㈜ 애큐온캐피탈(구
+                                ㈜케이티캐피탈), 금융결제원, 신용카드사,
+                                행정자치부, 국가보훈처, 보건복지부, 법무부
+                              </td>
+                              <td>
+                                동의서를 제출한 시점부터 당해 서비스 계약,
+                                지급보증 계약 및 보험 계약의 효력이 종료
+                                (가입거절의 경우 상담 종료)되는 시점까지
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td colspan="4">
+                                <ul>
+                                  <li>
+                                    ※ 채무불이행정보, 공공기록정보 중 체납정보,
+                                    금융질서 문란자 정보 등에 등록되어 있는 경우
+                                    청약에 대한 승낙을 유보할 수 있습니다.
+                                  </li>
+                                  <li>
+                                    ※ 일반적으로 신용정보를 조회하는 경우
+                                    신용등급이 하락할 수 있으나 본 조회는
+                                    신용등급에 아무런 영향을 미치지 않습니다.
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table> -->
                       </div>
                     </div>
                   </div>
@@ -540,10 +637,10 @@
     <!-- e: 약관 변경 안내 full popup -->
 
     <script>
-			// 메뉴창, 단촉도구창 표시안함
-			function windowclose() {
-				window.close();
+      // 메뉴창, 단촉도구창 표시안함
+      function windowclose() {
+        window.close();
       }
-		</script>
+    </script>
   </body>
 </html>
