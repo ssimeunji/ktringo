@@ -406,7 +406,7 @@
     <div class="full_page layerPopUp show" layer="">
       <div class="full_page-header">
         <div class="title">개인(신용)정보의 조회 및 이용/제공에 대한 동의</div>
-        <button class="btn_popclose"><span>닫기</span></button>
+        <button class="btn_popclose" onclick="windowclose();"><span>닫기</span></button>
       </div>
       <div class="full_page-cont">
         <!-- s:tab -->
@@ -540,9 +540,10 @@
     <!-- e: 약관 변경 안내 full popup -->
 
     <script>
-      // $("#popplay").modal({
-      // 	fadeDuration: 0,
-      // });
-    </script>
+			// 메뉴창, 단촉도구창 표시안함
+			function windowclose() {
+				window.close();
+      }
+		</script>
   </body>
 </html>
