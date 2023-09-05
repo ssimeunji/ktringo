@@ -1594,7 +1594,8 @@ button:disabled {
 .full_page-cont .pw_section + .tite_wrap {
   margin-top: 24px;
 }
-.full_page-cont .pw_section .btn_listmore {
+.full_page-cont .pw_section .btn_listmore,
+.chb .btn_listmore {
   display: block;
   background-image: url("../images/icon/icon_more.svg");
   background-position: center center;
