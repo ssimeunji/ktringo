@@ -320,20 +320,8 @@ label.custom-select {
   margin-top: 5px;
 }
 
-.mt10 {
-  margin-top: 10px;
-}
-
 .mt15 {
   margin-top: 15px;
-}
-
-.mt30 {
-  margin-top: 30px;
-}
-
-.mt50 {
-  margin-top: 50px;
 }
 
 .form_list {
@@ -1594,8 +1582,7 @@ button:disabled {
 .full_page-cont .pw_section + .tite_wrap {
   margin-top: 24px;
 }
-.full_page-cont .pw_section .btn_listmore,
-.chb .btn_listmore {
+.full_page-cont .pw_section .btn_listmore {
   display: block;
   background-image: url("../images/icon/icon_more.svg");
   background-position: center center;
@@ -1876,24 +1863,6 @@ button:disabled {
   padding-top: 30px;
 }
 
-/* s: 230902 추가 */
-.info_t3 {
-  font-size: 0.875rem;
-  margin-top: 10px;
-  padding-top: 10px;
-}
-
-.info_t4 {
-  font-size: 0.875rem;
-  margin-top: 10px;
-  padding-top: 10px;
-  color: #706be9;
-  margin-top: 30px;
-  border-top: 1px dashed #ddd;
-  padding-top: 30px;
-}
-/* e: 230902 추가 */
-
 .info_img {
   margin-top: 10px;
 }
@@ -2085,7 +2054,25 @@ button:disabled {
   z-index: 1;
 }
 
-/* s: 230902 추가 */
+/* s: 230902 Ãß°¡ */
+.info_t3 {
+  font-size: 0.875rem;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.info_t4 {
+  font-size: 0.875rem;
+  margin-top: 10px;
+  padding-top: 10px;
+  color: #706be9;
+  margin-top: 30px;
+  border-top: 1px dashed #ddd;
+  padding-top: 30px;
+}
+/* e: 230902 Ãß°¡ */
+
+/* s: 230902 Ãß°¡ */
 .table_type1 {
   margin-top: 30px;
 }
@@ -2131,8 +2118,4 @@ button:disabled {
 .pdl30 {
   padding-left: 30px;
 }
-
-.text-center {
-  text-align: center;
-}
-/* e: 230902 추가 */
+/* e: 230902 Ãß°¡ */
