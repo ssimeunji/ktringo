@@ -141,16 +141,6 @@
         <!-- e: -->
         <!-- s: -->
         <div class="pw_section">
-          <div class="p_dep2">생년월일</div>
-          <div class="form_group">
-            <input type="text" id="" name="" class="input" placeholder="" />
-            <span class="bar">-</span>
-            <span class="masking">******</span>
-          </div>
-        </div>
-        <!-- e: -->
-        <!-- s: -->
-        <div class="pw_section">
           <div class="p_dep2">새 비밀번호</div>
           <input
             type="password"
@@ -229,6 +219,13 @@
             <span class="bar">-</span>
             <input type="text" id="" name="" class="input" placeholder="" />
           </div>
+          <p class="mt10 mb10"><strong>or</strong></p>
+          <div class="p_dep2">생년월일</div>
+          <div class="form_group">
+            <input type="text" id="" name="" class="input" placeholder="" />
+            <span class="bar">-</span>
+            <span class="masking">******</span>
+          </div>
         </div>
         <!-- e: -->
         <!-- s: -->
@@ -252,37 +249,167 @@
         </div>
         <!-- e: -->
         <!-- s: -->
+		<!-- s: 230905 수정 -->
         <div class="pw_section">
           <div class="p_dep2">약관 동의</div>
           <div class="form_list">
-            <div class="chb">
-              <input type="checkbox" id="checkbox1" name="agree" /><label
-                for="checkbox1"
-                ><span>모두 동의</span></label
+			  	<div class="chb mt30">
+					<input type="checkbox" id="checkbox7" name="agree" /><label
+					for="checkbox7"
+					><span>약관 전체 동의하기 (선택 동의 포함)<br /><br /></span
+						></label>
+				</div>
+				<div class="form_list">
+            <div
+              class="chb chb_flex layerBtn"
+            >
+              <input
+                type="checkbox"
+                id="checkbox8"
+                name="agreea"
+                class="chb"
+              /><label for="checkbox8"
+                ><span>(필수) 서비스 이용약관</span></label
               >
+              <button class="btn_listmore" onclick="open1('AIRG-FR-MYH-TERMS-01.html')"></button>
             </div>
-            <div class="chb">
-              <input type="checkbox" id="checkbox2" name="agree" /><label
-                for="checkbox2"
-                ><span>서비스 이용 약관(필수)</span></label
+            <div
+              class="chb chb_flex layerBtn"
+            >
+              <input
+                type="checkbox"
+                id="checkbox9"
+                name="agreea"
+                class="chb"
+              /><label for="checkbox9"
+                ><span>(필수) 개인정보 처리 위탁 동의</span></label
               >
-              <a
-                href="javascript:;"
-                class="btn_ar btnToggle"
-                data-panelid="agree_box"
-                >보기</a
+              <button class="btn_listmore" onclick="open1('AIRG-FR-MYH-TERMS-08.html')"></button>
+            </div>
+            <div
+              class="chb chb_flex layerBtn"
+              onclick="open1('AIRG-FR-MYH-TERMS-04.html')"
+            >
+              <input
+                type="checkbox"
+                id="checkbox10"
+                name="agreea"
+                class="chb"
+              /><label for="checkbox10"
+                ><span>(필수) 개인정보 수집/이용에 대한 동의</span></label
               >
+              <button class="btn_listmore"></button>
+            </div>
+            <div
+              class="chb chb_flex layerBtn"
+            >
+              <input
+                type="checkbox"
+                id="checkbox11"
+                name="agreea"
+                class="chb"
+              /><label for="checkbox11"
+                ><span
+                  >(필수) 개인정보 수집/이용에 대한 동의 (AI통화비서)</span
+                ></label
+              >
+              <button class="btn_listmore" onclick="open1('AIRG-FR-MYH-TERMS-07.html')"></button>
+            </div>
+            <div
+              class="chb chb_flex layerBtn"
+            >
+              <input
+                type="checkbox"
+                id="checkbox12"
+                name="agreea"
+                class="chb"
+              /><label for="checkbox12"
+                ><span
+                  >(필수) 개인(신용)정보의 조회 및 이용/제공에 대한 동의</span
+                ></label
+              >
+              <button class="btn_listmore" onclick="open1('AIRG-FR-MYH-TERMS-03.html')"></button>
+            </div>
+            <div
+              class="chb chb_flex layerBtn"
+              onclick="open1('AIRG-FR-MYH-TERMS-06.html')"
+            >
+              <input
+                type="checkbox"
+                id="checkbox13"
+                name="agreea"
+                class="chb"
+              /><label for="checkbox13"
+                ><span>(필수) 스팸메시지 관리에 대한 동의</span></label
+              >
+              <button class="btn_listmore"></button>
+            </div>
+            <div
+              class="chb chb_flex layerBtn"
+            >
+              <input
+                type="checkbox"
+                id="checkbox14"
+                name="agreea"
+                class="chb"
+              /><label for="checkbox14"
+                ><span>(필수) 발신번호 변작 방지에 대한 동의</span></label
+              >
+              <button class="btn_listmore" onclick="open1('AIRG-FR-MYH-TERMS-05.html')"></button>
+            </div>
+            <div
+              class="chb chb_flex layerBtn"
+            >
+              <input
+                type="checkbox"
+                id="checkbox15"
+                name="agreea"
+                class="chb"
+              /><label for="checkbox15"
+                ><span
+                  >(선택) 마케팅 및 이벤트 목적의 개인정보 수집 및 이용
+                  동의</span
+                ></label
+              >
+              <button class="btn_listmore" onclick="open1('AIRG-FR-MYH-TERMS-09.html')"></button>
+            </div>
+            <div
+              class="chb chb_flex layerBtn"
+            >
+              <input
+                type="checkbox"
+                id="checkbox16"
+                name="agreea"
+                class="chb"
+              /><label for="checkbox16"
+                ><span>(선택) 광고성 정보 수신 동의</span></label
+              >
+              <button class="btn_listmore" onclick="open1('AIRG-FR-MYH-TERMS-10.html')"></button>
+            </div>
+            <div
+              class="chb chb_flex layerBtn"
+            >
+              <span class="pdl30">개인정보처리방침</span>
+              <button class="btn_listmore" onclick="open1('AIRG-FR-MYH-TERMS-02.html')"></button>
             </div>
           </div>
-          <div class="texta" id="agree_box">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-          </div>
-          <!-- s: 230905 수정 -->
-          <!-- <div class="chb">
-						<input type="checkbox" id="checkbox3" name="agreea" class="chb" /><label for="checkbox3"><span>개인정보 수집 및 이동 동의(필수)</span></label>
-					</div> -->
-          <!-- e: 230905 수정 -->
         </div>
+      </div>
+      <!-- s:bottom btn -->
+      <div class="full_page-bottom">
+        <button
+          type="button"
+          class="btn_round layerBtn"
+          layer="AIRG-FR-MYH-012"
+        >
+          <span>약관 동의하고 시작하기</span>
+        </button>
+      </div>
+      <!-- e:bottom btn -->
+    </div>
+	<!-- e: 230905 수정 -->
+    <!-- e: 약관 변경 안내 full popup -->
+				
         <!-- e: -->
       </div>
       <!-- s:bottom btn -->
