@@ -133,6 +133,20 @@
           </div>
         </a>
         <!-- e: -->
+
+        <!-- s: 230905 팝업 -->
+        <button class="btn_listmore" onclick="open1('popup3.html')">
+          문자 보내기 안내 팝업
+        </button>
+        <br /><br />
+        <button class="btn_listmore" onclick="open1('popup4.html')">
+          메시지 이용 요금 안내 팝업
+        </button>
+        <br /><br />
+        <button class="btn_listmore" onclick="open1('popup5.html')">
+          전화걸기 팝업
+        </button>
+        <!-- e: 230905 팝업 -->
       </div>
 
       <!-- e:content -->
@@ -338,6 +352,14 @@
           couponClose();
         });
       });
+
+      function open1(myFile) {
+        window.open(
+          myFile,
+          "_blank",
+          "menubar=no, toolbar=no width = 500, height = 700"
+        );
+      }
     </script>
   </body>
 </html>
