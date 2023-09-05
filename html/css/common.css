@@ -320,6 +320,10 @@ label.custom-select {
   margin-top: 5px;
 }
 
+.mt10 {
+  margin-top: 10px;
+}
+
 .mt15 {
   margin-top: 15px;
 }
@@ -2125,5 +2129,9 @@ button:disabled {
 }
 .pdl30 {
   padding-left: 30px;
+}
+
+.text-center {
+  text-align: center;
 }
 /* e: 230902 추가 */
