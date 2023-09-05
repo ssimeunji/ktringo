@@ -2119,3 +2119,26 @@ button:disabled {
   padding-left: 30px;
 }
 /* e: 230902 Ãß°¡ */
+
+-------------------------------------
+/* s: 230905-2 추가 */
+.mt10 {
+  margin-top: 10px;
+}
+
+.chb .btn_listmore {
+  display: block;
+  background-image: url("../images/icon/icon_more.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 16px;
+  height: 16px;
+  text-indent: -9999px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+/* e: 230905-2 추가 */
