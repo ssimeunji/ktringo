@@ -3,6 +3,9 @@ $(document).ready(function () {
 	$(window)
 		.resize(function () {
 			var width = window.innerWidth;
+			if (!$('.header_wrap').hasClass('scroll')){
+				$(".header_wrap").addClass("scroll");
+			}
 			if (width < 672) {
 				// mobile
 				$(".navigator").addClass("mobile");
@@ -34,6 +37,12 @@ var navigation = function () {
 	}, 250);
 	function hasScrolled() {
 		var st = $(this).scrollTop();
+		// 현재 PWA인지 확인
+		var isPWA = window.matchMedia("(display-mode: standalone)").matches;
+
+		if (isPWA && st < 1) {
+			location.reload();
+		}
 		if (Math.abs(lastScrollTop - st) <= delta) return;
 		// bottom nav
 		if (st > lastScrollTop && st > navbarHeight) {
@@ -44,10 +53,10 @@ var navigation = function () {
 			// Scroll Up
 			if (st + $(window).height() < $(document).height()) {
 				$(".navigator.mobile").addClass("fixed");
-				$(".header_wrap").removeClass("scroll");
+				// $(".header_wrap").removeClass("scroll");
 
 				$(".navigator.mobile").addClass("fixed");
-				$(".header_wrap").removeClass("scroll");
+				// $(".header_wrap").removeClass("scroll");
 			}
 		}
 		// header
@@ -57,7 +66,7 @@ var navigation = function () {
 		} else {
 			// Scroll Up
 			if (st + $(window).height() < $(document).height()) {
-				$(".header_wrap").removeClass("scroll");
+				// $(".header_wrap").removeClass("scroll");
 			}
 		}
 		lastScrollTop = st;

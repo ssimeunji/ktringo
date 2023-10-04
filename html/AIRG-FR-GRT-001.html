@@ -1,685 +1,770 @@
 <!DOCTYPE html>
 <html lang="kr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<meta
-			name="viewport"
-			content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0, viewport-fit=cover"
-		/>
-		<!-- <link href=".ico" rel="shortcut icon" /> -->
-		<!-- <link rel="apple-touch-icon-precomposed" href=".png" /> -->
-		<meta name="format-detection" content="telephone=no" />
-		<title>AI 링고</title>
-		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <!-- <link href=".ico" rel="shortcut icon" /> -->
+    <!-- <link rel="apple-touch-icon-precomposed" href=".png" /> -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>AI 링고</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 
-		<script type="text/javascript" src="js/design.js"></script>
-		<script type="text/javascript" src="js/jquery.modal.min.js"></script>
-		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="css/contents.css" />
-	</head>
-	<body>
-		<!-- s:header -->
-		<div class="header_wrap">
-			<div class="header_wrap-title">
-				<h1><img src="images/logo.svg" alt="kt링고" /></h1>
-				<div class="line">
-					<div class="num">02-3322-1239</div>
-					<button class="btn_down btnToggle" data-panelid="panel1"><span class="blind">열기</span></button>
-					<!-- s:dropmenu -->
-					<div class="menu_box" id="panel1">
-						<ul>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-						</ul>
-					</div>
-					<!-- e:dropmenu -->
-				</div>
-				<!-- s:navi -->
-				<div class="navigator">
-					<ul>
-						<li>
-							<a href="AIRG-FR-AIT-001.html">
-								<i class="icon_aitalk"></i>
-								<p class="txt">AI 톡</p>
-							</a>
-						</li>
-						<li>
-							<a href="AIRG-FR-GRT-001.html" class="active">
-								<i class="icon_setting"></i>
-								<p class="txt">인사말 설정</p>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="icon_create"></i>
-								<p class="txt">인사말 제작</p>
-							</a>
-						</li>
+    <script type="text/javascript" src="js/design.js"></script>
+    <script type="text/javascript" src="js/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contents.css" />
+  </head>
+  <body>
+    <!-- s:header -->
+    <div class="header_wrap">
+      <div class="header_wrap-title">
+        <h1><img src="images/logo.svg" alt="kt링고" /></h1>
+        <div class="line">
+          <div class="num">02-3322-1239</div>
+          <button class="btn_down btnToggle" data-panelid="panel1">
+            <span class="blind">열기</span>
+          </button>
+          <!-- s:dropmenu -->
+          <div class="menu_box" id="panel1">
+            <ul>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+            </ul>
+          </div>
+          <!-- e:dropmenu -->
+        </div>
+        <!-- s:navi -->
+        <div class="navigator">
+          <ul>
+            <li>
+              <a href="AIRG-FR-AIT-001.html">
+                <i class="icon_aitalk"></i>
+                <p class="txt">AI 톡</p>
+              </a>
+            </li>
+            <li>
+              <a href="AIRG-FR-GRT-001.html" class="active">
+                <i class="icon_setting"></i>
+                <p class="txt">인사말 설정</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="icon_create"></i>
+                <p class="txt">인사말 제작</p>
+              </a>
+            </li>
 
-						<li>
-							<a href="AIRG-FR-MYH-001.html">
-								<i class="icon_mypage"></i>
-								<p class="txt">마이페이지</p>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!-- e:navi -->
-				<div class="alarm_wrap layerBtn" layer="layer_alarm">
-					<i class="ic"></i>
-					<div class="has_icon"></div>
-				</div>
-			</div>
-		</div>
-		<!-- e:header -->
+            <li>
+              <a href="AIRG-FR-MYH-001.html">
+                <i class="icon_mypage"></i>
+                <p class="txt">마이페이지</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- e:navi -->
+        <div class="alarm_wrap layerBtn" layer="layer_alarm">
+          <i class="ic"></i>
+          <div class="has_icon"></div>
+        </div>
+      </div>
+    </div>
+    <!-- e:header -->
 
-		<div class="cont_wrap">
-			<!-- s:2dep title -->
-			<div class="title_wrap">
-				<h2 class="h2_title">인사말설정</h2>
-			</div>
-			<!-- e:2dep title -->
+    <div class="cont_wrap">
+      <!-- s:2dep title -->
+      <div class="title_wrap">
+        <h2 class="h2_title">인사말설정</h2>
+      </div>
+      <!-- e:2dep title -->
 
-			<!-- s:tab -->
-			<div class="common-tab">
-				<!-- s:menu -->
-				<div class="tab_width">
-					<ul class="tab_wrap tab-btn">
-						<li class="selectd">
-							<span class="tit">메인</span>
-						</li>
-						<li>
-							<span class="tit">인트로</span>
-							<div class="tipClick">
-								<a href="#">?</a>
-								<strong class="tooltipT">
-									<p>인트로란 메인 통화 연결음 송출 전 약 5~7초간 회사 슬로건 등을 송출하는 기능입니다.</p>
-								</strong>
-							</div>
-						</li>
-					</ul>
-				</div>
-				<!-- e:menu -->
+      <!-- s:tab -->
+      <div class="common-tab">
+        <!-- s:menu -->
+        <div class="tab_width">
+          <ul class="tab_wrap tab-btn">
+            <li class="selectd">
+              <span class="tit">메인</span>
+            </li>
+            <li>
+              <span class="tit">인트로</span>
+              <div class="tipClick">
+                <a href="#">?</a>
+                <strong class="tooltipT">
+                  <p>
+                    인트로란 메인 통화 연결음 송출 전 약 5~7초간 회사 슬로건
+                    등을 송출하는 기능입니다.
+                  </p>
+                </strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- e:menu -->
 
-				<!-- s:panel -->
-				<div class="tab-panel">
-					<!-- s:메인 -->
-					<div class="tab-item selectd">
-						<div class="cont_body">
-							<!-- s -->
-							<div class="state_box">
-								<a href="#popplay" rel="modal:open">
-									<i class="icon"></i>
-									<div class="infotitle_wrap">
-										<div class="t1">
-											<span class="tbold">기간설정</span>
-											<span class="badge ing">송출중</span>
-										</div>
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">2022.01.01~2022.12.31</div>
+        <!-- s:panel -->
+        <div class="tab-panel">
+          <!-- s:메인 -->
+          <div class="tab-item selectd">
+            <div class="cont_body">
+              <!-- s -->
+              <div class="state_box">
+                <a href="#popplay" rel="modal:open">
+                  <i class="icon"></i>
+                  <div class="infotitle_wrap">
+                    <div class="t1">
+                      <span class="tbold">기간설정</span>
+                      <span class="badge ing">송출중</span>
+                    </div>
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">2022.01.01~2022.12.31</div>
 
-										<!-- s:설정내역 없을경우 -->
-										<div class="no_setting" style="display: none">
-											<p class="tit">현재 설정된 내역이 없습니다.</p>
-											<p class="sub_t">하단의 설정을 선택하여 설정해주세요.</p>
-										</div>
-										<!-- e:설정내역 없을경우 -->
-									</div>
-								</a>
-							</div>
-							<!-- e -->
+                    <!-- s:설정내역 없을경우 -->
+                    <div class="no_setting" style="display: none">
+                      <p class="tit">현재 설정된 내역이 없습니다.</p>
+                      <p class="sub_t">하단의 설정을 선택하여 설정해주세요.</p>
+                    </div>
+                    <!-- e:설정내역 없을경우 -->
+                  </div>
+                </a>
+              </div>
+              <!-- e -->
 
-							<!-- s -->
-							<div class="info_box">
-								<p class="t1"><strong>송출 우선 순위를 알려드려요</strong></p>
-								<p class="t2">긴급설정 > 특정 > 월별 > 기간 > 요일 > 기본</p>
-							</div>
-							<!-- e -->
+              <!-- s -->
+              <div class="info_box">
+                <p class="t1"><strong>송출 우선 순위를 알려드려요</strong></p>
+                <p class="t2">긴급설정 > 특정 > 월별 > 기간 > 요일 > 기본</p>
+              </div>
+              <!-- e -->
 
-							<!-- s:list_box 기본설정 -->
-							<div class="list_box">
-								<div class="top btnToggle" data-panelid="box1">
-									<p class="tit">기본설정</p>
-									<p class="sub_t">기본으로 송출되는 콘텐츠 설정</p>
-									<button class="btn_listdown"></button>
-								</div>
+              <!-- s:list_box 기본설정 -->
+              <div class="list_box">
+                <div class="top btnToggle" data-panelid="box1">
+                  <p class="tit">기본설정</p>
+                  <p class="sub_t">기본으로 송출되는 콘텐츠 설정</p>
+                  <button class="btn_listdown"></button>
+                </div>
 
-								<div class="down_box" id="box1">
-									<div class="btn_area"><button class="btn_round">설정 변경하기</button></div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- e:list_box 기본설정 -->
-							<!-- s:list_box 미설정 -->
+                <div class="down_box" id="box1">
+                  <div class="btn_area">
+                    <button class="btn_round">설정 변경하기</button>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- e:list_box 기본설정 -->
+              <!-- s:list_box 미설정 -->
 
-							<!-- e:list_box 미설정 -->
+              <!-- e:list_box 미설정 -->
 
-							<!-- s:list_box 특정설정 -->
-							<div class="list_box">
-								<div class="top btnToggle" data-panelid="box2">
-									<p class="tit">특정설정</p>
-									<p class="sub_t">특정 기간에만 송출되는 콘텐츠 설정</p>
-									<button class="btn_listdown"></button>
-								</div>
+              <!-- s:list_box 특정설정 -->
+              <div class="list_box">
+                <div class="top btnToggle" data-panelid="box2">
+                  <p class="tit">특정설정</p>
+                  <p class="sub_t">특정 기간에만 송출되는 콘텐츠 설정</p>
+                  <button class="btn_listdown"></button>
+                </div>
 
-								<div class="down_box" id="box2">
-									<div class="btn_area"><button class="btn_round">설정 변경하기</button></div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">2022.01.01</div>
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- e:list_box 특정설정 -->
+                <div class="down_box" id="box2">
+                  <div class="btn_area">
+                    <button class="btn_round">설정 변경하기</button>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">2022.01.01</div>
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- e:list_box 특정설정 -->
 
-							<!-- s:list_box 월별설정 -->
-							<div class="list_box">
-								<div class="top btnToggle" data-panelid="box3">
-									<p class="tit">월별설정</p>
-									<p class="sub_t">지정된 주/요일에만 송출되는 콘텐츠 설정</p>
-									<button class="btn_listdown"></button>
-								</div>
+              <!-- s:list_box 월별설정 -->
+              <div class="list_box">
+                <div class="top btnToggle" data-panelid="box3">
+                  <p class="tit">월별설정</p>
+                  <p class="sub_t">지정된 주/요일에만 송출되는 콘텐츠 설정</p>
+                  <button class="btn_listdown"></button>
+                </div>
 
-								<div class="down_box" id="box3">
-									<div class="btn_area"><button class="btn_round">설정 변경하기</button></div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">2주차 수요일</div>
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- e:list_box 월별설정 -->
+                <div class="down_box" id="box3">
+                  <div class="btn_area">
+                    <button class="btn_round">설정 변경하기</button>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">2주차 수요일</div>
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- e:list_box 월별설정 -->
 
-							<!-- s:list_box 기간설정 -->
-							<div class="list_box">
-								<div class="top btnToggle" data-panelid="box4">
-									<p class="tit">기간설정</p>
-									<p class="sub_t">지정된 기간에만 송출되는 콘텐츠 설정</p>
-									<button class="btn_listdown"></button>
-								</div>
+              <!-- s:list_box 기간설정 -->
+              <div class="list_box">
+                <div class="top btnToggle" data-panelid="box4">
+                  <p class="tit">기간설정</p>
+                  <p class="sub_t">지정된 기간에만 송출되는 콘텐츠 설정</p>
+                  <button class="btn_listdown"></button>
+                </div>
 
-								<div class="down_box" id="box4">
-									<div class="btn_area"><button class="btn_round">설정 변경하기</button></div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">2022.01.01~2022.12.31</div>
-										<div class="t4">영업시간 멘트</div>
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-											<a href="#popplay" rel="modal:open" class="btn_play">play</a>
-										</div>
-									</div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">2022.01.01~2022.12.31</div>
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-											<a href="#popplay" rel="modal:open" class="btn_music">voice</a>
-										</div>
-									</div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">2022.01.01~2022.12.31</div>
-										<div class="t4">영업시간 멘트</div>
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-											<a href="#popplay" rel="modal:open" class="btn_mall">all</a>
-										</div>
-									</div>
-									<div class="infotitle_wrap">
-										<div class="no_r">최근 통화 기록이 없습니다.</div>
-									</div>
-								</div>
-							</div>
-							<!-- e:list_box 기간설정 -->
+                <div class="down_box" id="box4">
+                  <div class="btn_area">
+                    <button class="btn_round">설정 변경하기</button>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">2022.01.01~2022.12.31</div>
+                    <div class="t4">영업시간 멘트</div>
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                      <a href="#popplay" rel="modal:open" class="btn_play"
+                        >play</a
+                      >
+                    </div>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">2022.01.01~2022.12.31</div>
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                      <a href="#popplay" rel="modal:open" class="btn_music"
+                        >voice</a
+                      >
+                    </div>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">2022.01.01~2022.12.31</div>
+                    <div class="t4">영업시간 멘트</div>
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                      <a href="#popplay" rel="modal:open" class="btn_mall"
+                        >all</a
+                      >
+                    </div>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="no_r">최근 통화 기록이 없습니다.</div>
+                  </div>
+                </div>
+              </div>
+              <!-- e:list_box 기간설정 -->
 
-							<!-- s:list_box 요일설정 -->
-							<div class="list_box">
-								<div class="top btnToggle" data-panelid="box5">
-									<p class="tit">요일설정</p>
-									<p class="sub_t">지정된 요일에만 송출되는 콘텐츠 설정</p>
-									<button class="btn_listdown"></button>
-								</div>
+              <!-- s:list_box 요일설정 -->
+              <div class="list_box">
+                <div class="top btnToggle" data-panelid="box5">
+                  <p class="tit">요일설정</p>
+                  <p class="sub_t">지정된 요일에만 송출되는 콘텐츠 설정</p>
+                  <button class="btn_listdown"></button>
+                </div>
 
-								<div class="down_box" id="box5">
-									<div class="btn_area"><button class="btn_round">설정 변경하기</button></div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">수요일00:00~02:00</div>
-										<div class="t4">영업시간 멘트</div>
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- e:list_box 요일설정 -->
-							<!-- s:list_box 긴급설정 -->
-							<div class="list_box">
-								<div class="top btnToggle" data-panelid="box6">
-									<p class="tit">긴급설정</p>
-									<p class="sub_t">임시 휴무등 빠른설정 필요할 경우 설정</p>
-									<button class="btn_listdown"></button>
-								</div>
+                <div class="down_box" id="box5">
+                  <div class="btn_area">
+                    <button class="btn_round">설정 변경하기</button>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">수요일00:00~02:00</div>
+                    <div class="t4">영업시간 멘트</div>
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- e:list_box 요일설정 -->
+              <!-- s:list_box 긴급설정 -->
+              <div class="list_box">
+                <div class="top btnToggle" data-panelid="box6">
+                  <p class="tit">긴급설정</p>
+                  <p class="sub_t">임시 휴무등 빠른설정 필요할 경우 설정</p>
+                  <button class="btn_listdown"></button>
+                </div>
 
-								<div class="down_box" id="box6">
-									<div class="btn_area"><button class="btn_round">설정 변경하기</button></div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">영업종료</div>
-										</div>
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- e:list_box 긴급설정 -->
+                <div class="down_box" id="box6">
+                  <div class="btn_area">
+                    <button class="btn_round">설정 변경하기</button>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">영업종료</div>
+                    </div>
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- e:list_box 긴급설정 -->
 
-							<!-- s:매장전화 꺼놓기  0829 수정 -->
-							<div class="list_box single2">
-								<div class="top layerBtn" layer="layer_ment">
-									<p class="tit dflex">AI 전화응대기 <span class="badge used">사용중</span><span class="badge">미사용</span></p>
-									<p class="sub_t">AI가 먼저 전화를 받아 고객의 용건을 메모로 남겨드려요. <br />(※ 매장 전화 벨이 울리지 않습니다.)</p>
-									<button class="btn_listmore"></button>
-								</div>
-							</div>
-							<!-- e:매장전화 꺼놓기 0829 수정  -->
-						</div>
-					</div>
+              <!-- s:매장전화 꺼놓기  0829 수정 -->
+              <div class="list_box single2">
+                <div class="top layerBtn" layer="layer_ment">
+                  <p class="tit dflex">
+                    AI 전화응대기 <span class="badge used">사용중</span
+                    ><span class="badge">미사용</span>
+                  </p>
+                  <p class="sub_t">
+                    AI가 먼저 전화를 받아 고객의 용건을 메모로 남겨드려요.
+                    <br />(※ 매장 전화 벨이 울리지 않습니다.)
+                  </p>
+                  <button class="btn_listmore"></button>
+                </div>
+              </div>
+              <!-- e:매장전화 꺼놓기 0829 수정  -->
+            </div>
+          </div>
 
-					<!-- s:인트로 -->
-					<div class="tab-item">
-						<div class="cont_body">
-							<!-- s -->
-							<div class="state_box">
-								<a href="#popplay" rel="modal:open">
-									<i class="icon"></i>
-									<div class="infotitle_wrap">
-										<div class="t1">
-											<span class="tbold">기간설정</span>
-											<span class="badge ing">송출중</span>
-										</div>
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">2022.01.01~2022.12.31</div>
-									</div>
-								</a>
+          <!-- s:인트로 -->
+          <div class="tab-item">
+            <div class="cont_body">
+              <!-- s -->
+              <div class="state_box">
+                <a href="#popplay" rel="modal:open">
+                  <i class="icon"></i>
+                  <div class="infotitle_wrap">
+                    <div class="t1">
+                      <span class="tbold">기간설정</span>
+                      <span class="badge ing">송출중</span>
+                    </div>
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">2022.01.01~2022.12.31</div>
+                  </div>
+                </a>
 
-								<div class="tipClick">
-									<a href="#" class="ic_mark"></a>
-									<strong class="tooltipT">
-										<p>인트로 멘트가 끝까지 송출된 후 통화가 연결 됩니다.</p>
-									</strong>
-								</div>
-							</div>
-							<!-- e -->
+                <div class="tipClick">
+                  <a href="#" class="ic_mark"></a>
+                  <strong class="tooltipT">
+                    <p>인트로 멘트가 끝까지 송출된 후 통화가 연결 됩니다.</p>
+                  </strong>
+                </div>
+              </div>
+              <!-- e -->
 
-							<!-- s -->
-							<div class="info_box">
-								<p class="t1"><strong>송출 우선 순위를 알려드려요</strong></p>
-								<p class="t2">긴급설정 > 특정 > 월별 > 기간 > 요일 > 기본</p>
-							</div>
-							<!-- e -->
+              <!-- s -->
+              <div class="info_box">
+                <p class="t1"><strong>송출 우선 순위를 알려드려요</strong></p>
+                <p class="t2">긴급설정 > 특정 > 월별 > 기간 > 요일 > 기본</p>
+              </div>
+              <!-- e -->
 
-							<!-- s:list_box 기본설정 -->
-							<div class="list_box">
-								<div class="top btnToggle" data-panelid="t2_box1">
-									<p class="tit">기본설정</p>
-									<p class="sub_t">기본으로 송출되는 콘텐츠 설정</p>
-									<button class="btn_listdown"></button>
-								</div>
+              <!-- s:list_box 기본설정 -->
+              <div class="list_box">
+                <div class="top btnToggle" data-panelid="t2_box1">
+                  <p class="tit">기본설정</p>
+                  <p class="sub_t">기본으로 송출되는 콘텐츠 설정</p>
+                  <button class="btn_listdown"></button>
+                </div>
 
-								<div class="down_box" id="t2_box1">
-									<div class="btn_area"><button class="btn_round">설정 변경하기</button></div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
+                <div class="down_box" id="t2_box1">
+                  <div class="btn_area">
+                    <button class="btn_round">설정 변경하기</button>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
 
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- e:list_box 기본설정 -->
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- e:list_box 기본설정 -->
 
-							<!-- s:list_box 기간설정 -->
-							<div class="list_box">
-								<div class="top btnToggle" data-panelid="t2_box2">
-									<p class="tit">기간설정</p>
-									<p class="sub_t">지정된 기간에만 송출되는 콘텐츠 설정</p>
-									<button class="btn_listdown"></button>
-								</div>
+              <!-- s:list_box 기간설정 -->
+              <div class="list_box">
+                <div class="top btnToggle" data-panelid="t2_box2">
+                  <p class="tit">기간설정</p>
+                  <p class="sub_t">지정된 기간에만 송출되는 콘텐츠 설정</p>
+                  <button class="btn_listdown"></button>
+                </div>
 
-								<div class="down_box" id="t2_box2">
-									<div class="btn_area"><button class="btn_round">설정 변경하기</button></div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">2022.01.01~2022.12.31</div>
-										<div class="t4">영업시간 멘트</div>
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-										</div>
-									</div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">2022.01.01~2022.12.31</div>
-									</div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">2022.01.01~2022.12.31</div>
-										<div class="t4">영업시간 멘트</div>
-									</div>
-									<div class="infotitle_wrap">
-										<div class="no_r">현재 설정된 내역이 없습니다.</div>
-									</div>
-								</div>
-							</div>
-							<!-- e:list_box 기간설정 -->
+                <div class="down_box" id="t2_box2">
+                  <div class="btn_area">
+                    <button class="btn_round">설정 변경하기</button>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">2022.01.01~2022.12.31</div>
+                    <div class="t4">영업시간 멘트</div>
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                    </div>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">2022.01.01~2022.12.31</div>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">2022.01.01~2022.12.31</div>
+                    <div class="t4">영업시간 멘트</div>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="no_r">현재 설정된 내역이 없습니다.</div>
+                  </div>
+                </div>
+              </div>
+              <!-- e:list_box 기간설정 -->
 
-							<!-- s:list_box 요일설정 -->
-							<div class="list_box">
-								<div class="top btnToggle" data-panelid="t2_box3">
-									<p class="tit">요일설정</p>
-									<p class="sub_t">지정된 요일에만 송출되는 콘텐츠 설정</p>
-									<button class="btn_listdown"></button>
-								</div>
+              <!-- s:list_box 요일설정 -->
+              <div class="list_box">
+                <div class="top btnToggle" data-panelid="t2_box3">
+                  <p class="tit">요일설정</p>
+                  <p class="sub_t">지정된 요일에만 송출되는 콘텐츠 설정</p>
+                  <button class="btn_listdown"></button>
+                </div>
 
-								<div class="down_box" id="t2_box3">
-									<div class="btn_area"><button class="btn_round">설정 변경하기</button></div>
-									<div class="infotitle_wrap">
-										<div class="t2">
-											<div class="ell">1120288944</div>
-											<div class="bar">/</div>
-											<div class="ell">M202202101730150000</div>
-										</div>
-										<div class="t3">수요일00:00~02:00</div>
-										<div class="t4">영업시간 멘트</div>
-										<div class="btns">
-											<div class="badge ing">송출중</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- e:list_box 요일설정 -->
-							<!-- s:오류메시지 -->
-							<div class="error_wrap">
-								<i class="icon_error"></i>
-								회선전화 오류로 현재 설정 확인이 불가합니다.
-								<br />고객센터 문의 바랍니다.
-							</div>
-							<!-- e:오류메시지 -->
-						</div>
-					</div>
-				</div>
-				<!-- s:panel -->
-			</div>
-			<!-- e:tab -->
-		</div>
-		<!-- s:개인정보방침 -->
-		<div class="footer"><a href="javascript:;">개인정보처리방침</a></div>
-		<!-- e:개인정보방침 -->
+                <div class="down_box" id="t2_box3">
+                  <div class="btn_area">
+                    <button class="btn_round">설정 변경하기</button>
+                  </div>
+                  <div class="infotitle_wrap">
+                    <div class="t2">
+                      <div class="ell">1120288944</div>
+                      <div class="bar">/</div>
+                      <div class="ell">M202202101730150000</div>
+                    </div>
+                    <div class="t3">수요일00:00~02:00</div>
+                    <div class="t4">영업시간 멘트</div>
+                    <div class="btns">
+                      <div class="badge ing">송출중</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- e:list_box 요일설정 -->
+              <!-- s:오류메시지 -->
+              <div class="error_wrap">
+                <i class="icon_error"></i>
+                회선전화 오류로 현재 설정 확인이 불가합니다.
+                <br />고객센터 문의 바랍니다.
+              </div>
+              <!-- e:오류메시지 -->
+            </div>
+          </div>
+        </div>
+        <!-- s:panel -->
+      </div>
+      <!-- e:tab -->
+    </div>
+    <!-- s:개인정보방침 -->
+    <div class="footer"><a href="javascript:;">개인정보처리방침</a></div>
+    <!-- e:개인정보방침 -->
 
-		<!-- s: 알람 full popup -->
-		<div class="full_page layerPopUp" layer="layer_alarm">
-			<div class="full_page-header">
-				<div class="title">알람</div>
-				<div class="line">
-					<div class="num">02-3322-1239</div>
-					<button class="btn_down btnToggle" data-panelid="poppanel1"><span class="blind">열기</span></button>
-					<!-- s:dropmenu -->
-					<div class="menu_box" id="poppanel1">
-						<ul>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">102-3322-1239</a></li>
-						</ul>
-					</div>
-					<!-- e:dropmenu -->
-				</div>
-				<button class="btn_popclose"><span>닫기</span></button>
-			</div>
-			<div class="full_page-cont">
-				<div class="notice_box">
-					<i class="ic"></i>
-					<div class="t">홈화면에 바로가기를 만드시면 통화연결음 설정과 제작을 더욱 편리하게 이용하실 수 있습니다.</div>
-				</div>
-				<div class="btn_top"><button class="btn_round">바로가기 만들기</button></div>
-				<div class="cate_top right">
-					<select name="" id="" class="pop_select">
-						<option value="">전체</option>
-						<option value="">수신전화</option>
-						<option value="">부재중전화</option>
-						<option value="">당겨받기</option>
-						<option value="">AI메모</option>
-					</select>
-				</div>
-				<ul class="alarm_list">
-					<li>
-						<a href="javascript:;">
-							<div class="cate_text">공지</div>
-							<div class="textw">V링고 필수청취음을 이용해보세요</div>
-							<div class="date">2023-05-30</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<div class="cate_text">당겨받기</div>
-							<div class="textw">02-0000-000로 010-1234-1234 전화왔습니다. 010-0000-0000로 당겨 받았습니다.</div>
-							<div class="date">2023-05-30</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<div class="cate_text">AI메모</div>
-							<div class="textw">링고 필수청취음을 이용해보세요</div>
-							<div class="date">2023-05-30</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<div class="cate_text">부재중 전화</div>
-							<div class="textw">링고 필수청취음을 이용해보세요</div>
-							<div class="date">2023-05-30</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<div class="cate_text">공지</div>
-							<div class="textw">V링고 필수청취음을 이용해보세요</div>
-							<div class="date">2023-05-30</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<div class="cate_text">당겨받기</div>
-							<div class="textw">02-0000-000로 010-1234-1234 전화왔습니다. 010-0000-0000로 당겨 받았습니다.</div>
-							<div class="date">2023-05-30</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<div class="cate_text">AI메모</div>
-							<div class="textw">링고 필수청취음을 이용해보세요</div>
-							<div class="date">2023-05-30</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<div class="cate_text">부재중 전화--</div>
-							<div class="textw">링고 필수청취음을 이용해보세요</div>
-							<div class="date">2023-05-30</div>
-						</a>
-					</li>
-					<li>
-						<a href="javascript:;">
-							<div class="cate_text">부재중 전화--</div>
-							<div class="textw">링고 필수청취음을 이용해보세요</div>
-							<div class="date">2023-05-30</div>
-						</a>
-					</li>
-					<li><div class="no_result">수신된 알림 메시지가 없습니다.</div></li>
-				</ul>
-			</div>
-		</div>
-		<!-- e: 알람 full popup -->
+    <!-- s: 알람 full popup -->
+    <div class="full_page layerPopUp" layer="layer_alarm">
+      <div class="full_page-header">
+        <div class="title">알람</div>
+        <div class="line">
+          <div class="num">02-3322-1239</div>
+          <button class="btn_down btnToggle" data-panelid="poppanel1">
+            <span class="blind">열기</span>
+          </button>
+          <!-- s:dropmenu -->
+          <div class="menu_box" id="poppanel1">
+            <ul>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">102-3322-1239</a></li>
+            </ul>
+          </div>
+          <!-- e:dropmenu -->
+        </div>
+        <button class="btn_popclose"><span>닫기</span></button>
+      </div>
+      <div class="full_page-cont">
+        <div class="notice_box">
+          <i class="ic"></i>
+          <div class="t">
+            홈화면에 바로가기를 만드시면 통화연결음 설정과 제작을 더욱 편리하게
+            이용하실 수 있습니다.
+          </div>
+        </div>
+        <div class="btn_top">
+          <button class="btn_round">바로가기 만들기</button>
+        </div>
+        <div class="cate_top right">
+          <select name="" id="" class="pop_select">
+            <option value="">전체</option>
+            <option value="">수신전화</option>
+            <option value="">부재중전화</option>
+            <option value="">당겨받기</option>
+            <option value="">AI메모</option>
+          </select>
+        </div>
+        <ul class="alarm_list">
+          <li>
+            <a href="javascript:;">
+              <div class="alarm_new"></div>
+              <div class="cate_text">공지</div>
+              <div class="textw">V링고 필수청취음을 이용해보세요</div>
+              <div class="date">2023-05-30</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="alarm_new"></div>
+              <div class="cate_text">당겨받기</div>
+              <div class="textw">
+                02-0000-000로 010-1234-1234 전화왔습니다. 010-0000-0000로 당겨
+                받았습니다.
+              </div>
+              <div class="date">2023-05-30</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="alarm_old"></div>
+              <div class="cate_text">AI메모</div>
+              <div class="textw">링고 필수청취음을 이용해보세요</div>
+              <div class="date">2023-05-30</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="alarm_old"></div>
+              <div class="cate_text">부재중 전화</div>
+              <div class="textw">링고 필수청취음을 이용해보세요</div>
+              <div class="date">2023-05-30</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="alarm_old"></div>
+              <div class="cate_text">공지</div>
+              <div class="textw">V링고 필수청취음을 이용해보세요</div>
+              <div class="date">2023-05-30</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="alarm_old"></div>
+              <div class="cate_text">당겨받기</div>
+              <div class="textw">
+                02-0000-000로 010-1234-1234 전화왔습니다. 010-0000-0000로 당겨
+                받았습니다.
+              </div>
+              <div class="date">2023-05-30</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="alarm_old"></div>
+              <div class="cate_text">AI메모</div>
+              <div class="textw">링고 필수청취음을 이용해보세요</div>
+              <div class="date">2023-05-30</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="alarm_old"></div>
+              <div class="cate_text">부재중 전화--</div>
+              <div class="textw">링고 필수청취음을 이용해보세요</div>
+              <div class="date">2023-05-30</div>
+            </a>
+          </li>
+          <li>
+            <a href="javascript:;">
+              <div class="alarm_old"></div>
+              <div class="cate_text">부재중 전화--</div>
+              <div class="textw">링고 필수청취음을 이용해보세요</div>
+              <div class="date">2023-05-30</div>
+            </a>
+          </li>
+          <li><div class="no_result">수신된 알림 메시지가 없습니다.</div></li>
+        </ul>
+      </div>
+    </div>
+    <!-- e: 알람 full popup -->
 
-		<!-- s: 매장전화 멘트 full popup 0829 수정 -->
-		<div class="full_page layerPopUp" layer="layer_ment">
-			<div class="full_page-header">
-				<div class="title">AI 전화응대</div>
-				<div class="line">
-					<div class="num">02-3322-1239</div>
-					<button class="btn_down btnToggle" data-panelid="poppanel2"><span class="blind">열기</span></button>
-					<!-- s:dropmenu -->
-					<div class="menu_box" id="poppanel2">
-						<ul>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-						</ul>
-					</div>
-					<!-- e:dropmenu -->
-				</div>
-				<button class="btn_popclose"><span>닫기</span></button>
-			</div>
-			<div class="full_page-cont">
-				<div class="mentt_wrap">
-					<div class="t">AI 전화응대 사용</div>
-					<div class="radio_switch"><input type="checkbox" class="chech_switch" id="switch10" /><label for="switch10">Toggle</label></div>
-				</div>
-				<div class="ment_sub">AI가 먼저 전화를 받아 고객의 용건을 메모로 남겨드려요. <br />(※ 매장 전화 벨이 울리지 않습니다.)</div>
+    <!-- s: 매장전화 멘트 full popup 0829 수정 -->
+    <div class="full_page layerPopUp" layer="layer_ment">
+      <div class="full_page-header">
+        <div class="title">AI 전화응대</div>
+        <div class="line">
+          <div class="num">02-3322-1239</div>
+          <button class="btn_down btnToggle" data-panelid="poppanel2">
+            <span class="blind">열기</span>
+          </button>
+          <!-- s:dropmenu -->
+          <div class="menu_box" id="poppanel2">
+            <ul>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+            </ul>
+          </div>
+          <!-- e:dropmenu -->
+        </div>
+        <button class="btn_popclose"><span>닫기</span></button>
+      </div>
+      <div class="full_page-cont">
+        <div class="mentt_wrap">
+          <div class="t">AI 전화응대 사용</div>
+          <div class="radio_switch">
+            <input type="checkbox" class="chech_switch" id="switch10" /><label
+              for="switch10"
+              >Toggle</label
+            >
+          </div>
+        </div>
+        <div class="ment_sub">
+          AI가 먼저 전화를 받아 고객의 용건을 메모로 남겨드려요. <br />(※ 매장
+          전화 벨이 울리지 않습니다.)
+        </div>
 
-				<div class="texta_wrap">
-					<textarea name="" id="count_text" cols="30" maxlength="88" placeholder="추가 멘트를 입력 해 주세요" rows="7"></textarea>
-					<div class="lim num" id="#charCount">0/88</div>
-				</div>
+        <div class="texta_wrap">
+          <textarea
+            name=""
+            id="count_text"
+            cols="30"
+            maxlength="88"
+            placeholder="추가 멘트를 입력 해 주세요"
+            rows="7"
+          ></textarea>
+          <div class="lim num" id="#charCount">0/88</div>
+        </div>
 
-				<div class="aiinfo_box">
-					<p class="t1">
-						입력하신 문구와 기본 문구 "전화연결 대신 메모만 받고 있어요. 메모를 남기시겠어요?"가 함께 송출됩니다. <br />* 미 입력 시 기본 문구만 송출 됩니다.
-					</p>
-				</div>
-			</div>
-			<!-- s:bottom btn -->
-			<div class="full_page-bottom">
-				<button type="button" class="btn_round"><span>설정하기</span></button>
-			</div>
-			<!-- e:bottom btn -->
-		</div>
-		<!-- e: 매장전화 멘트 full popup 0829 수정 -->
+        <div class="aiinfo_box">
+          <p class="t1">
+            입력하신 문구와 기본 문구 "전화연결 대신 메모만 받고 있어요. 메모를
+            남기시겠어요?"가 함께 송출됩니다. <br />* 미 입력 시 기본 문구만
+            송출 됩니다.
+          </p>
+        </div>
+      </div>
+      <!-- s:bottom btn -->
+      <div class="full_page-bottom">
+        <button type="button" class="btn_round"><span>설정하기</span></button>
+      </div>
+      <!-- e:bottom btn -->
+    </div>
+    <!-- e: 매장전화 멘트 full popup 0829 수정 -->
 
-		<!-- s:음원 영상 레이어팝업 -->
-		<div id="popplay" class="modal">
-			<div class="modal_title">음원 콘텐츠</div>
-			<a href="" class="close-modal">close</a>
+    <!-- s:음원 영상 레이어팝업 -->
+    <div id="popplay" class="modal">
+      <div class="modal_title">음원 콘텐츠</div>
+      <a href="" class="close-modal">close</a>
 
-			<div class="modal_body">
-				<div class="play_wrap">
-					<video oncontextmenu="return false;" id="myVideo" width="100%" controls autoplay>
-						<source src="movie.mp4" type="video/mp4" />
-					</video>
+      <div class="modal_body">
+        <div class="play_wrap">
+          <video
+            oncontextmenu="return false;"
+            id="myVideo"
+            width="100%"
+            controls
+            autoplay
+          >
+            <source src="movie.mp4" type="video/mp4" />
+          </video>
 
-					<audio src="https://ccrma.stanford.edu/~jos/mp3/harpsi-cs.mp3" controls></audio>
-				</div>
-				<div class="play_list">
-					<ul>
-						<li>
-							<div class="tit">영상</div>
-							<div class="txt">
-								<p>M60012345</p>
-							</div>
-						</li>
-						<li>
-							<div class="tit">음원</div>
-							<div class="txt">
-								<p>60012345</p>
-								<a href="javascript:;" class="lable_ls">듣기</a>
-							</div>
-						</li>
-						<li>
-							<div class="tit">설정</div>
-							<div class="txt column">
-								<p>2022.01.01~2022.12.31</p>
-								<p>영업시간 멘트</p>
-							</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- e:음원 영상 레이어팝업 -->
-	</body>
+          <audio
+            src="https://ccrma.stanford.edu/~jos/mp3/harpsi-cs.mp3"
+            controls
+          ></audio>
+        </div>
+        <div class="play_list">
+          <ul>
+            <li>
+              <div class="tit">영상</div>
+              <div class="txt">
+                <p>M60012345</p>
+              </div>
+            </li>
+            <li>
+              <div class="tit">음원</div>
+              <div class="txt">
+                <p>60012345</p>
+                <a href="javascript:;" class="lable_ls">듣기</a>
+              </div>
+            </li>
+            <li>
+              <div class="tit">설정</div>
+              <div class="txt column">
+                <p>2022.01.01~2022.12.31</p>
+                <p>영업시간 멘트</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- e:음원 영상 레이어팝업 -->
+  </body>
 </html>

@@ -59,6 +59,18 @@ img {
   vertical-align: middle;
 }
 
+.chb input[type="checkbox"]:disabled:checked + label:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #ddd;
+  margin-right: 6px;
+  border-radius: 2px;
+  vertical-align: middle;
+  background: url("../images/icon/bg_check_disbled.svg") no-repeat 0 0;
+}
+
 .chb input[type="checkbox"]:checked + label::before {
   content: "";
   width: 16px;
@@ -501,7 +513,7 @@ label.custom-select {
 }
 .header_wrap.scroll {
   width: 100%;
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   z-index: 1000;
@@ -2054,7 +2066,7 @@ button:disabled {
   z-index: 1;
 }
 
-/* s: 230902 Ãß°¡ */
+/* s: 230902 횄횩째징 */
 .info_t3 {
   font-size: 0.875rem;
   margin-top: 10px;
@@ -2070,9 +2082,9 @@ button:disabled {
   border-top: 1px dashed #ddd;
   padding-top: 30px;
 }
-/* e: 230902 Ãß°¡ */
+/* e: 230902 횄횩째징 */
 
-/* s: 230902 Ãß°¡ */
+/* s: 230902 횄횩째징 */
 .table_type1 {
   margin-top: 30px;
 }
@@ -2118,10 +2130,7 @@ button:disabled {
 .pdl30 {
   padding-left: 30px;
 }
-/* e: 230902 Ãß°¡ */
 
--------------------------------------
-/* s: 230905-2 추가 */
 .mt10 {
   margin-top: 10px;
 }
@@ -2141,4 +2150,25 @@ button:disabled {
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* e: 230905-2 추가 */
+
+/* 230913 추가 */
+.alarm_new {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #ff1112;
+  border-radius: 100%;
+  position: absolute;
+  left: 0px;
+  top: 15px;
+}
+.alarm_old {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #000;
+  border-radius: 100%;
+  position: absolute;
+  left: 0px;
+  top: 15px;
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="kr">
+<html lang="kr" class="ovh">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/contents.css" />
   </head>
-  <body class="">
+  <body>
     <!-- s:header -->
     <div class="header_wrap">
       <div class="header_wrap-title">
@@ -401,162 +401,296 @@
     <!-- s:개인정보방침 -->
     <div class="footer"><a href="javascript:;">개인정보처리방침</a></div>
     <!-- e:개인정보방침 -->
-    <div class="full_page page">
+
+    <!-- s: 약관 변경 안내 full popup -->
+    <div class="full_page layerPopUp show" layer="">
       <div class="full_page-header">
-        <!-- 0829 수정 <button class="btn_popback"><span>이전</span></button> -->
-        <div class="title">010-1234-1234</div>
-        <button class="btn_call">전화받기</button>
+        <div class="title">홈 화면 바로가기 만들기</div>
         <button class="btn_popclose"><span>닫기</span></button>
       </div>
-      <div class="full_page-cont pd0">
-        <!-- s -->
-        <div class="aiinfo_box detail">
-          <p class="t1">
-            AI가 02-3289-1234로 온 전화를 대신 받아 메모로 남겨드렸습니다.
-          </p>
+      <div class="full_page-cont">
+        <!-- s:tab -->
+        <div class="common-tab">
+          <!-- s:menu -->
+          <div class="tab_width mobile_full">
+            <ul class="tab_wrap tab-btn">
+              <li class="selectd">
+                <span class="tit">아이폰</span>
+              </li>
+              <!-- <li>
+                <span class="tit">-</span>
+              </li>
+              <li>
+                <span class="tit">-</span>
+              </li> -->
+            </ul>
+          </div>
+          <!-- e:menu -->
+
+          <!-- s:panel -->
+          <div class="tab-panel mobile_full">
+            <!-- s:메인 -->
+            <div class="tab-item selectd">
+              <div class="cont_body">
+                <!-- s:tab -->
+                <div class="inner-tab">
+                  <!-- s:menu -->
+                  <div class="tab_width">
+                    <ul class="tab-btn2">
+                      <li class="selectd">
+                        <span class="tit">사파리</span>
+                      </li>
+                      <li>
+                        <span class="tit">크롬</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- e:menu -->
+
+                  <!-- s:panel -->
+                  <div class="tab-panel2">
+                    <!-- s:안드로이드폰 -->
+                    <div class="tab-item selectd">
+                      <div class="cont_body">
+                        <p class="info_t1">
+                          아이폰 사파리 브라우저 [홈 화면 바로가기] 만들기 안내
+                        </p>
+                        <p class="info_t2">
+                          1. 브라우저 <strong>“사파리”</strong>를 실행합니다.
+                        </p>
+
+                        <p class="info_t2">
+                          2. 사파리 브라우저 하단 메뉴의
+                          <strong>“더보기”</strong> 버튼을 선택합니다.
+                        </p>
+
+                        <div class="info_img">
+                          <img src="images/ios/05.png" alt="05" />
+                        </div>
+
+                        <p class="info_t2">
+                          3. 목록에서 <strong>“홈 화면에 추가”</strong>를 선택
+                          합니다.
+                        </p>
+                        <div class="info_img">
+                          <img src="images/ios/06.png" alt="06" />
+                        </div>
+
+                        <p class="info_t2">
+                          4. 홈 화면에서 보여질 이름을 설정하고 오른쪽 상단의
+                          <strong>“추가”</strong> 버튼을 선택 합니다.
+                        </p>
+                        <div class="info_img">
+                          <img src="images/ios/07.png" alt="07" />
+                        </div>
+
+                        <p class="info_t2">
+                          5. 4 에서 설정한 이름인
+                          <strong>“AI RINGO”</strong>로 생성된 것을 확인할 수
+                          있습니다.
+                        </p>
+                        <div class="info_img">
+                          <img src="images/ios/08.png" alt="08" />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- s:삼성 -->
+                    <div class="tab-item">
+                      <div class="cont_body">
+                        <!-- s -->
+                        <p class="info_t1">
+                          아이폰 크롬 브라우저 [홈 화면 바로가기] 만들기 안내
+                        </p>
+                        <p class="info_t2">
+                          1. 브라우저 <strong>“크롬”</strong>을 실행합니다.
+                        </p>
+                        <p class="info_t2">
+                          2. 크롬 브라우저 상단 우측의
+                          <strong>“더보기”</strong> 버튼을 선택합니다.
+                        </p>
+                        <div class="info_img">
+                          <img src="images/ios/09.png" alt="09" />
+                        </div>
+
+                        <p class="info_t2">
+                          3. 목록에서 <strong>“홈 화면에 추가”</strong>를
+                          선택합니다.
+                        </p>
+                        <div class="info_img">
+                          <img src="images/ios/10.png" alt="10" />
+                        </div>
+
+                        <p class="info_t2">
+                          4. 홈 화면에서 보여질 이름을 설정하고 오른쪽 상단의
+                          <strong>“추가”</strong> 버튼을 선택 합니다.
+                        </p>
+                        <div class="info_img">
+                          <img src="images/ios/11.png" alt="11" />
+                        </div>
+
+                        <p class="info_t2">
+                          5. 4 에서 설정한 이름인
+                          <strong>“AI RINGO”</strong>로 생성된 것을 확인할 수
+                          있습니다.
+                        </p>
+                        <div class="info_img">
+                          <img src="images/ios/12.png" alt="12" />
+                        </div>
+
+                        <!-- e -->
+                      </div>
+                    </div>
+                  </div>
+                  <!-- s:panel -->
+                </div>
+                <!-- e:tab -->
+              </div>
+            </div>
+            <!-- s:아이폰 -->
+            <div class="tab-item">
+              <div class="cont_body">
+                <p class="info_t1">PWA 만들기 안내</p>
+                <p class="info_t2">
+                  1. 아이폰의 <strong>“설정”</strong>을 선택합니다.
+                </p>
+
+                <div class="info_img">
+                  <img src="images/ios/05.png" alt="02" />
+                </div>
+
+                <p class="info_t2">
+                  2. 목록에서 <strong>“홈 화면에 추가”</strong>를 선택 합니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/ios/06.png" alt="03" />
+                </div>
+
+                <p class="info_t2">
+                  3. 홈 화면에서 보여질 이름을 설정하고 오른쪽 상단의
+                  <strong>“추가”</strong>를 선택 합니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/ios/07.png" alt="04" />
+                </div>
+
+                <p class="info_t2">
+                  4. 3 에서 설정한 이름인
+                  <strong>“AI RINGO”</strong>로 생성된 PWA를 확인할 수 있습니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/ios/08.png" alt="05" />
+                </div>
+              </div>
+            </div>
+
+            <!-- s:PC -->
+            <div class="tab-item">
+              <div class="cont_body">
+                <p class="info_t1">크롬 Pushl알림 받기 설정 안내</p>
+                <p class="info_t2">
+                  1. 브라우저 <strong>“크롬”</strong>을 실행합니다.
+                </p>
+                <p class="info_t2">
+                  2. 로그인 후 크롬 브라우저 우측 상단의
+                  <strong>더보기(⋮)</strong> 버튼을 선택하고 “설정”을
+                  선택합니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/pc/00.png" alt="02" />
+                </div>
+
+                <p class="info_t2">
+                  3. 설정 화면 상단 좌측 <strong>“햄버거 메뉴”</strong>를
+                  선택합니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/pc/01.png" alt="03" />
+                </div>
+
+                <p class="info_t2">
+                  4. <strong>“보안 및 개인정보 보호”</strong> 선택 합니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/pc/02.png" alt="04" />
+                </div>
+
+                <p class="info_t2">
+                  5. 개인정보보호 및 보안에서 <strong>“사이트설정”</strong> 선택
+                  합니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/pc/03.png" alt="05" />
+                </div>
+
+                <p class="info_t2">
+                  6. 권한에서 <strong>“알림설정”</strong> 선택 합니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/pc/04.png" alt="06" />
+                </div>
+
+                <p class="info_t2">
+                  7. 기본 동작에서
+                  <strong>“사이트에서 알림 전송 허용을 요청할 수 있음”</strong>
+                  선택 하면 Push알림을 받을 수 있습니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/pc/05.png" alt="07" />
+                </div>
+
+                <p class="info_t2">
+                  8. 사이트별 알림 설정은 하단 맞춤 설정된 동작에서 주가 버튼을
+                  선택하여 <strong>*.ringo.co.kr </strong>URL입력합니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/pc/06.png" alt="08" />
+                </div>
+
+                <p class="info_t2">
+                  9. 추가한 <strong>*.ringo.co.kr</strong> URL 확인 됩니다.
+                </p>
+                <div class="info_img">
+                  <img src="images/pc/07.png" alt="08" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- s:panel -->
         </div>
-        <!-- e -->
-        <div class="talk_wrap">
-          <!-- s -->
-          <div class="tdate_wrap">
-            <span class="t">2023년 6월 28일</span>
-          </div>
-          <!-- e -->
-
-          <!-- s:left -->
-          <div class="left">
-            <div class="litems sms">
-              <div class="phone">010-1234-1234</div>
-              <div class="text_wrap">
-                <div class="msg_w">
-                  <div class="msg">
-                    <div class="inbox">
-                      여보세요 안녕하세요 혹시 30일 수요일에 예약이 가능할까요?
-                      내일 모레 4명 방문예정입니다
-                    </div>
-                  </div>
-                </div>
-                <div class="time">오전 10:20</div>
-              </div>
-            </div>
-          </div>
-          <!-- e:left -->
-
-          <!-- s:left -->
-          <div class="left">
-            <div class="litems stt">
-              <div class="text_wrap">
-                <div class="msg_w">
-                  <div class="msg"><div class="inbox">안녕하세요~!</div></div>
-                  <div class="msg">
-                    <div class="inbox">
-                      여보세요 안녕하세요 혹시 30일 수요일에 예약이 가능할까요?
-                      내일 모레 4명 방문예정입니다
-                    </div>
-                  </div>
-                </div>
-                <div class="time">오전 10:20</div>
-              </div>
-            </div>
-          </div>
-          <!-- e:left -->
-
-          <!-- s:right -->
-          <div class="right">
-            <div class="ritems">
-              <div class="text_wrap">
-                <div class="time">
-                  <span class="t">오전 10:20</span>
-                </div>
-                <div class="msg_w">
-                  <div class="msg"><div class="inbox">안녕하세요~!</div></div>
-                  <div class="msg">
-                    <div class="inbox">
-                      네 예약 가능하세요. 예약 도와드릴까요? 네 예약 가능하세요.
-                      예약 도와드릴까요?
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- e:right -->
-          <!-- s:left -->
-          <div class="left">
-            <div class="litems stt">
-              <div class="text_wrap">
-                <div class="msg_w">
-                  <div class="msg"><div class="inbox">안녕하세요~!</div></div>
-                  <div class="msg">
-                    <div class="inbox">
-                      여보세요 안녕하세요 혹시 30일 수요일에 예약이 가능할까요?
-                      내일 모레 4명 방문예정입니다
-                    </div>
-                  </div>
-                </div>
-                <div class="time">오전 10:20</div>
-              </div>
-            </div>
-          </div>
-          <!-- e:left -->
-
-          <!-- s:right -->
-          <div class="right">
-            <div class="ritems">
-              <div class="text_wrap">
-                <div class="time">
-                  <span class="t">오전 10:20</span>
-                </div>
-                <div class="msg_w">
-                  <div class="msg">
-                    <div class="inbox">안녕하세요~!</div>
-                  </div>
-                  <div class="msg">
-                    <div class="inbox">
-                      네 예약 가능하세요. 예약 도와드릴까요?
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- e:right -->
-          <!-- s:right -->
-          <div class="right">
-            <div class="ritems">
-              <div class="text_wrap">
-                <div class="time">
-                  <span class="t">오전 10:20</span>
-                </div>
-                <div class="msg_w">
-                  <div class="msg">
-                    <div class="inbox">안녕하세요~!</div>
-                  </div>
-                  <div class="msg">
-                    <div class="inbox">
-                      네 예약 가능하세요. 예약 도와드릴까요?
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- e:right -->
-        </div>
-      </div>
-      <div class="full_page-bottom">
-        <div class="send_form">
-          <input type="text" id="" class="input_send" name="" />
-          <button class="btn_send">보내기</button>
-        </div>
-        <!-- s: 0829 수정  비활성화일때 
-				<div class="send_form">
-					<input type="text" id="" class="input_send" disabled="disabled" placeholder="유선 전화 고객에게는 메시지를 보낼 수 없습니다. " name="" />
-					<button class="btn_send" disabled="disabled">보내기</button>
-				</div>
-				e: 0829 수정  비활성화일때 -->
+        <!-- e:tab -->
       </div>
     </div>
+    <!-- e: 약관 변경 안내 full popup -->
+
+    <!-- s: 아이폰 사파리 브라우저 레이어팝업 230904 추가 -->
+    <div id="popuseiphone" class="modal">
+      <a href="" class="close-modal">close</a>
+
+      <div class="modal_body">
+        <div class="text_only tac">
+          <p class="mb10">
+            <strong
+              >편리한 링고 서비스 이용을 위해
+              <br />
+              홈화면에 바로가기를 만드세요.
+            </strong>
+          </p>
+          <p>
+            한번의 탭으로 빠른 링고 연결이 가능하여
+            <br />
+            알림 등 기능과 사용 편리성을 높일 수 있습니다.
+          </p>
+        </div>
+      </div>
+      <div class="modal_footer">
+        <div class="btn_row">
+          <button type="button" class="btn_round">
+            홈화면 바로가기 설정 안내
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- e: 아이폰 사파리 브라우저 레이어팝업 230904 추가 -->
 
     <script>
       // $("#popplay").modal({

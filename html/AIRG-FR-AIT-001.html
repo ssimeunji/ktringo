@@ -1,376 +1,448 @@
 <!DOCTYPE html>
 <html lang="kr">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-		<meta
-			name="viewport"
-			content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0, viewport-fit=cover"
-		/>
-		<!-- <link href=".ico" rel="shortcut icon" /> -->
-		<!-- <link rel="apple-touch-icon-precomposed" href=".png" /> -->
-		<meta name="format-detection" content="telephone=no" />
-		<title>AI 링고</title>
-		<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1.0, viewport-fit=cover"
+    />
+    <!-- <link href=".ico" rel="shortcut icon" /> -->
+    <!-- <link rel="apple-touch-icon-precomposed" href=".png" /> -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>AI 링고</title>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 
-		<script type="text/javascript" src="js/design.js"></script>
-		<script type="text/javascript" src="js/jquery.modal.min.js"></script>
-		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="css/contents.css" />
-	</head>
-	<body>
-		<!-- s:header -->
-		<div class="header_wrap">
-			<div class="header_wrap-title">
-				<h1><img src="images/logo.svg" alt="kt링고" /></h1>
-				<div class="line">
-					<div class="num">02-3322-1239</div>
-					<button class="btn_down btnToggle" data-panelid="panel1"><span class="blind">열기</span></button>
-					<!-- s:dropmenu -->
-					<div class="menu_box" id="panel1">
-						<ul>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-						</ul>
-					</div>
-					<!-- e:dropmenu -->
-				</div>
-				<!-- s:navi -->
-				<div class="navigator">
-					<ul>
-						<li>
-							<a href="AIRG-FR-AIT-001.html" class="active">
-								<i class="icon_aitalk"></i>
-								<p class="txt">AI 톡</p>
-							</a>
-						</li>
-						<li>
-							<a href="AIRG-FR-GRT-001.html">
-								<i class="icon_setting"></i>
-								<p class="txt">인사말 설정</p>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:;">
-								<i class="icon_create"></i>
-								<p class="txt">인사말 제작</p>
-							</a>
-						</li>
+    <script type="text/javascript" src="js/design.js"></script>
+    <script type="text/javascript" src="js/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/contents.css" />
+  </head>
+  <body>
+    <!-- s:header -->
+    <div class="header_wrap">
+      <div class="header_wrap-title">
+        <h1><img src="images/logo.svg" alt="kt링고" /></h1>
+        <div class="line">
+          <div class="num">02-3322-1239</div>
+          <button class="btn_down btnToggle" data-panelid="panel1">
+            <span class="blind">열기</span>
+          </button>
+          <!-- s:dropmenu -->
+          <div class="menu_box" id="panel1">
+            <ul>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+            </ul>
+          </div>
+          <!-- e:dropmenu -->
+        </div>
+        <!-- s:navi -->
+        <div class="navigator">
+          <ul>
+            <li>
+              <a href="AIRG-FR-AIT-001.html" class="active">
+                <i class="icon_aitalk"></i>
+                <p class="txt">AI 톡</p>
+              </a>
+            </li>
+            <li>
+              <a href="AIRG-FR-GRT-001.html">
+                <i class="icon_setting"></i>
+                <p class="txt">인사말 설정</p>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:;">
+                <i class="icon_create"></i>
+                <p class="txt">인사말 제작</p>
+              </a>
+            </li>
 
-						<li>
-							<a href="AIRG-FR-MYH-001.html">
-								<i class="icon_mypage"></i>
-								<p class="txt">마이페이지</p>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<!-- e:navi -->
-				<div class="alarm_wrap layerBtn" layer="layer_alarm">
-					<i class="ic"></i>
-					<div class="has_icon"></div>
-				</div>
-			</div>
-		</div>
-		<!-- e:header -->
+            <li>
+              <a href="AIRG-FR-MYH-001.html">
+                <i class="icon_mypage"></i>
+                <p class="txt">마이페이지</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- e:navi -->
+        <div class="alarm_wrap layerBtn" layer="layer_alarm">
+          <i class="ic"></i>
+          <div class="has_icon"></div>
+        </div>
+      </div>
+    </div>
+    <!-- e:header -->
 
-		<div class="cont_wrap">
-			<!-- s:2dep title -->
-			<div class="title_wrap">
-				<h2 class="h2_title">AI 톡</h2>
-			</div>
-			<!-- e:2dep title -->
+    <div class="cont_wrap">
+      <!-- s:2dep title -->
+      <div class="title_wrap">
+        <h2 class="h2_title">AI 톡</h2>
+      </div>
+      <!-- e:2dep title -->
 
-			<!-- s:tab -->
-			<div class="common-tab">
-				<!-- s:menu -->
-				<div class="tab_width">
-					<ul class="tab_wrap tab-btn">
-						<li class="selectd">
-							<span class="tit">통화기록</span>
-						</li>
-						<li>
-							<span class="tit">AI메모</span>
-						</li>
-					</ul>
-				</div>
-				<!-- e:menu -->
+      <!-- s:tab -->
+      <div class="common-tab">
+        <!-- s:menu -->
+        <div class="tab_width">
+          <ul class="tab_wrap tab-btn">
+            <li class="selectd">
+              <span class="tit">통화기록</span>
+            </li>
+            <li>
+              <span class="tit">AI메모</span>
+            </li>
+          </ul>
+        </div>
+        <!-- e:menu -->
 
-				<!-- s:panel -->
-				<div class="tab-panel">
-					<!-- s:통화기록 -->
-					<div class="tab-item selectd">
-						<div class="cont_body">
-							<!-- s:list_box  -->
-							<div class="date_title">2023년 6월 28일</div>
-							<div class="ai_box">
-								<ul>
-									<li>
-										<i class="icon_receive">수신</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-									<li>
-										<i class="icon_miss">부재</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-									<li>
-										<i class="icon_send">발신</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-									<li>
-										<i class="icon_pull">당겨받기</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- e:list_box  -->
+        <!-- s:panel -->
+        <div class="tab-panel">
+          <!-- s:통화기록 -->
+          <div class="tab-item selectd">
+            <div class="cont_body">
+              <!-- s:list_box  -->
+              <div class="date_title">2023년 6월 28일</div>
+              <div class="ai_box">
+                <ul>
+                  <li>
+                    <i class="icon_receive">수신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_miss">부재</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_send">발신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_pull">당겨받기</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- e:list_box  -->
 
-							<!-- s:list_box  -->
-							<div class="date_title">2023년 6월 28일</div>
-							<div class="ai_box">
-								<ul>
-									<li>
-										<i class="icon_receive">수신</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-									<li>
-										<i class="icon_miss">부재</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-									<li>
-										<i class="icon_send">발신</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-									<li>
-										<i class="icon_pull">당겨받기</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- e:list_box  -->
+              <!-- s:list_box  -->
+              <div class="date_title">2023년 6월 28일</div>
+              <div class="ai_box">
+                <ul>
+                  <li>
+                    <i class="icon_receive">수신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_miss">부재</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_send">발신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_pull">당겨받기</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- e:list_box  -->
 
-							<!-- s:list_box  -->
-							<div class="date_title">2023년 6월 28일</div>
-							<div class="ai_box">
-								<ul>
-									<li>
-										<i class="icon_receive">수신</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-									<li>
-										<i class="icon_miss">부재</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-									<li>
-										<i class="icon_send">발신</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-									<li>
-										<i class="icon_pull">당겨받기</i>
-										<div class="t_rwap">
-											<p class="phone">010-1234-1234</p>
-											<p class="time">오후 2시 30분</p>
-										</div>
-										<div class="btns">
-											<a href="javascript:;" class="btn_call">call</a>
-											<a href="javascript:;" class="btn_mag layerBtn" layer="layer_aitdetail">상세</a>
-										</div>
-									</li>
-								</ul>
-							</div>
-							<!-- e:list_box  -->
+              <!-- s:list_box  -->
+              <div class="date_title">2023년 6월 28일</div>
+              <div class="ai_box">
+                <ul>
+                  <li>
+                    <i class="icon_receive">수신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_miss">부재</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_send">발신</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                  <li>
+                    <i class="icon_pull">당겨받기</i>
+                    <div class="t_rwap">
+                      <p class="phone">010-1234-1234</p>
+                      <p class="time">오후 2시 30분</p>
+                    </div>
+                    <div class="btns">
+                      <a href="javascript:;" class="btn_call">call</a>
+                      <a
+                        href="javascript:;"
+                        class="btn_mag layerBtn"
+                        layer="layer_aitdetail"
+                        >상세</a
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- e:list_box  -->
 
-							<div class="infotitle_wrap">
-								<div class="no_r">최근 통화 기록이 없습니다.</div>
-							</div>
-						</div>
-					</div>
+              <div class="infotitle_wrap">
+                <div class="no_r">최근 통화 기록이 없습니다.</div>
+              </div>
+            </div>
+          </div>
 
-					<!-- s:AI메모 -->
-					<div class="tab-item">
-						<div class="cont_body">
-							<!-- s -->
-							<div class="aiinfo_box">
-								<p class="t1">02-3289-1234로 남겨주신 고객님께 남긴 소중한 메시지를 AI가 보여드립니다. ( 30일 까지 조회 가능)</p>
-							</div>
-							<!-- e -->
+          <!-- s:AI메모 -->
+          <div class="tab-item">
+            <div class="cont_body">
+              <!-- s -->
+              <div class="aiinfo_box">
+                <p class="t1">
+                  02-3289-1234로 남겨주신 고객님께 남긴 소중한 메시지를 AI가
+                  보여드립니다. ( 30일 까지 조회 가능)
+                </p>
+              </div>
+              <!-- e -->
 
-							<div class="top_select">
-								<label class="custom-select">
-									<select name="" id="" class="noline">
-										<option value="">전체</option>
-										<option value="">읽은메모</option>
-										<option value="">안읽은메모</option>
-									</select>
-								</label>
-							</div>
+              <div class="top_select">
+                <label class="custom-select">
+                  <select name="" id="" class="noline">
+                    <option value="">전체</option>
+                    <option value="">읽은메모</option>
+                    <option value="">안읽은메모</option>
+                  </select>
+                </label>
+              </div>
 
-							<!-- s: -->
-							<div class="ai_box memo layerBtn" layer="layer_aitdetail">
-								<div class="bu_new"></div>
-								<div class="top_info">
-									<div class="phone">010-1234-1234</div>
-									<div class="time">2023년 6월 28일</div>
-								</div>
-								<div class="msg_wrap">여보세요 안녕하세요 혹시 30일 수요일에 예약이 가능할까요? 혹시 30 내일 모레 4명 방문 예정입니다.</div>
-							</div>
-							<!-- e:  -->
+              <!-- s: -->
+              <div class="ai_box memo layerBtn" layer="layer_aitdetail">
+                <div class="bu_new"></div>
+                <div class="top_info">
+                  <div class="phone">010-1234-1234</div>
+                  <div class="time">2023년 6월 28일</div>
+                </div>
+                <div class="msg_wrap">
+                  여보세요 안녕하세요 혹시 30일 수요일에 예약이 가능할까요? 혹시
+                  30 내일 모레 4명 방문 예정입니다.
+                </div>
+              </div>
+              <!-- e:  -->
 
-							<!-- s: -->
-							<div class="ai_box memo layerBtn" layer="layer_aitdetail">
-								<div class="bu_new"></div>
-								<div class="top_info">
-									<div class="phone">010-1234-1234</div>
-									<div class="time">2023년 6월 28일</div>
-								</div>
-								<div class="msg_wrap">오늘 휴무이신가요?</div>
-							</div>
-							<!-- e:  -->
+              <!-- s: -->
+              <div class="ai_box memo layerBtn" layer="layer_aitdetail">
+                <div class="bu_new"></div>
+                <div class="top_info">
+                  <div class="phone">010-1234-1234</div>
+                  <div class="time">2023년 6월 28일</div>
+                </div>
+                <div class="msg_wrap">오늘 휴무이신가요?</div>
+              </div>
+              <!-- e:  -->
 
-							<!-- s: -->
-							<div class="ai_box memo layerBtn" layer="layer_aitdetail">
-								<div class="top_info">
-									<div class="phone">010-1234-1234</div>
-									<div class="time">2023년 6월 28일</div>
-								</div>
-								<div class="msg_wrap">오늘 휴무이신가요?</div>
-							</div>
-							<!-- e:  -->
+              <!-- s: -->
+              <div class="ai_box memo layerBtn" layer="layer_aitdetail">
+                <div class="top_info">
+                  <div class="phone">010-1234-1234</div>
+                  <div class="time">2023년 6월 28일</div>
+                </div>
+                <div class="msg_wrap">오늘 휴무이신가요?</div>
+              </div>
+              <!-- e:  -->
 
-							<div class="infotitle_wrap">
-								<div class="no_r">최근 받은 메모가 없습니다.</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- s:panel -->
-			</div>
-			<!-- e:tab -->
-		</div>
-		<!-- s:개인정보방침 -->
-		<div class="footer"><a href="javascript:;">개인정보처리방침</a></div>
-		<!-- e:개인정보방침 -->
+              <div class="infotitle_wrap">
+                <div class="no_r">최근 받은 메모가 없습니다.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- s:panel -->
+      </div>
+      <!-- e:tab -->
+    </div>
+    <!-- s:개인정보방침 -->
+    <div class="footer"><a href="javascript:;">개인정보처리방침</a></div>
+    <!-- e:개인정보방침 -->
 
-		<!-- s: 상세 full popup -->
-		<div class="full_page layerPopUp" layer="layer_aitdetail">
-			<div class="full_page-header">
-				<div class="title">상세</div>
-				<div class="line">
-					<div class="num">02-3322-1239</div>
-					<button class="btn_down btnToggle" data-panelid="poppanel1"><span class="blind">열기</span></button>
-					<!-- s:dropmenu -->
-					<div class="menu_box" id="poppanel1">
-						<ul>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">02-3322-1239</a></li>
-							<li><a href="javascript:;">102-3322-1239</a></li>
-						</ul>
-					</div>
-					<!-- e:dropmenu -->
-				</div>
-				<button class="btn_popclose"><span>닫기</span></button>
-			</div>
-			<div class="full_page-cont">
-				<div class="btn_top"><button class="btn_round">바로가기 만들기</button></div>
-				<div class="cate_top right">
-					<select name="" id="" class="pop_select">
-						<option value="">전체</option>
-					</select>
-				</div>
-			</div>
-		</div>
-		<!-- e: 상세 full popup -->
+    <!-- s: 상세 full popup -->
+    <div class="full_page layerPopUp" layer="layer_aitdetail">
+      <div class="full_page-header">
+        <div class="title">상세</div>
+        <div class="line">
+          <div class="num">02-3322-1239</div>
+          <button class="btn_down btnToggle" data-panelid="poppanel1">
+            <span class="blind">열기</span>
+          </button>
+          <!-- s:dropmenu -->
+          <div class="menu_box" id="poppanel1">
+            <ul>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">02-3322-1239</a></li>
+              <li><a href="javascript:;">102-3322-1239</a></li>
+            </ul>
+          </div>
+          <!-- e:dropmenu -->
+        </div>
+        <button class="btn_popclose"><span>닫기</span></button>
+      </div>
+      <div class="full_page-cont">
+        <div class="btn_top">
+          <button class="btn_round">바로가기 만들기</button>
+        </div>
+        <div class="cate_top right">
+          <select name="" id="" class="pop_select">
+            <option value="">전체</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- e: 상세 full popup -->
 
-		<script>
-			// $("#popplay").modal({
-			// 	fadeDuration: 0,
-			// });
-		</script>
-	</body>
+    <script>
+      // $("#popplay").modal({
+      // 	fadeDuration: 0,
+      // });
+    </script>
+  </body>
 </html>
