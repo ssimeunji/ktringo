@@ -971,7 +971,15 @@ label.custom-select {
 
 .footer {
   text-align: center;
-  padding-bottom: 100px;
+  position: sticky;
+  top: 100vh;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.footer2 {
+  text-align: center;
+  padding-bottom: 90px;
   position: sticky;
   top: 100vh;
   font-size: 0.875rem;
@@ -979,6 +987,24 @@ label.custom-select {
 }
 @media only screen and (min-width: 672px) {
   .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 50px;
+    padding-bottom: 0;
+  }
+  
+  .footer2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1468,6 +1494,7 @@ button:disabled {
   flex-direction: column;
   padding: 16px 24px;
   min-height: calc(100% - 120px);
+  
 }
 .full_page-cont .notice_box {
   border: 1px solid #d4d2f6;
@@ -1630,14 +1657,16 @@ button:disabled {
 .full_page.page .full_page-bottom {
   margin: 0;
   background: #fff;
-  height: 60px;
+  height: 48px;
 }
 .full_page.page .full_page-cont {
-  height: calc(100% - 110px);
+  height: calc(100% - 98px);
   min-height: auto;
   overflow-y: auto;
   overflow-x: hidden;
 }
+
+.full_page .formHeight100{height: 100%;min-height: 100%;margin: 0;padding: 0;}
 
 .desc_txt {
   color: #fe2e36;
@@ -2066,7 +2095,7 @@ button:disabled {
   z-index: 1;
 }
 
-/* s: 230902 횄횩째징 */
+/* s: 230902 Ãß°¡ */
 .info_t3 {
   font-size: 0.875rem;
   margin-top: 10px;
@@ -2082,9 +2111,9 @@ button:disabled {
   border-top: 1px dashed #ddd;
   padding-top: 30px;
 }
-/* e: 230902 횄횩째징 */
+/* e: 230902 Ãß°¡ */
 
-/* s: 230902 횄횩째징 */
+/* s: 230902 Ãß°¡ */
 .table_type1 {
   margin-top: 30px;
 }
@@ -2149,26 +2178,4 @@ button:disabled {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-}
-
-/* 230913 추가 */
-.alarm_new {
-  display: block;
-  width: 6px;
-  height: 6px;
-  background: #ff1112;
-  border-radius: 100%;
-  position: absolute;
-  left: 0px;
-  top: 15px;
-}
-.alarm_old {
-  display: block;
-  width: 6px;
-  height: 6px;
-  background: #000;
-  border-radius: 100%;
-  position: absolute;
-  left: 0px;
-  top: 15px;
 }

@@ -37,12 +37,13 @@ var navigation = function () {
 	}, 250);
 	function hasScrolled() {
 		var st = $(this).scrollTop();
-		// 현재 PWA인지 확인
+		
 		var isPWA = window.matchMedia("(display-mode: standalone)").matches;
 
 		if (isPWA && st < 1) {
 			location.reload();
 		}
+		
 		if (Math.abs(lastScrollTop - st) <= delta) return;
 		// bottom nav
 		if (st > lastScrollTop && st > navbarHeight) {
@@ -136,13 +137,14 @@ function commonTab(target) {
 	$(target).each(function () {
 		var $btn = $(this).find(".tab-btn").children(),
 			$panel = $(this).find(".tab-panel").children();
-
+		/*
 		$btn.on("click", function () {
 			$btn.removeClass("selectd");
 			$(this).addClass("selectd");
 			$panel.removeClass("selectd");
 			$panel.eq($(this).index()).addClass("selectd");
 		});
+		*/
 	});
 }
 
@@ -151,13 +153,14 @@ function innerTab(target) {
 	$(target).each(function () {
 		var $btn = $(this).find(".tab-btn2").children(),
 			$panel = $(this).find(".tab-panel2").children();
-
+		/*
 		$btn.on("click", function () {
 			$btn.removeClass("selectd");
 			$(this).addClass("selectd");
 			$panel.removeClass("selectd");
 			$panel.eq($(this).index()).addClass("selectd");
 		});
+		*/
 	});
 }
 
@@ -233,7 +236,7 @@ var prSelcted = function () {
 };
 
 $(function () {
-	limitCharCount("count_text", 88);
+	limitCharCount("count_text", 120);
 	btnTgShow();
 	navigation();
 	toggleClass('[data-js="toggle-class"]');
