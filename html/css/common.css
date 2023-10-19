@@ -1744,7 +1744,7 @@ button:disabled {
   margin-bottom: 10px !important;
 }
 
-.load_wrap {
+/* .load_wrap {
   display: block;
   width: 100%;
   height: 100%;
@@ -1760,7 +1760,7 @@ button:disabled {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
+} */
 
 .lds-spinner {
   color: official;
@@ -2186,16 +2186,16 @@ button:disabled {
 }
 
 /* s:231019 추가 */
-.loadingBox .dim {
+.load_wrap .dim {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
   z-index: 9998;
 }
-.loadingBox .circle {
+.load_wrap .circle {
   position: fixed;
   left: 50%;
   top: 50%;
